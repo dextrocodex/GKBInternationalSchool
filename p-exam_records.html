@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo.jpg">
+
+    <title>Exam Records- GKB International School</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- bootstrap theme -->
+    <link href="css/bootstrap-theme.css" rel="stylesheet">
+    <!--external css-->
+    <!-- font icon -->
+    <link href="css/elegant-icons-style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="css/fullcalendar.css">
+    <link href="css/widgets.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-responsive.css" rel="stylesheet" />
+    <link href="css/jquery-ui-1.10.4.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- container section start -->
+    <section id="container" class="main-content">
+        <header class="header dark-bg">
+            <div class="toggle-nav">
+                <div class="icon-reorder tooltips" data-original-title="Toggle Navigation" data-placement="bottom"><i
+                        class="icon_menu"></i></div>
+            </div>
+            <!--logo start-->
+            <a href="index.html" class="logo">GKB <span class="lite">International School</span></a>
+            <!--logo end-->
+
+            <div class="top-nav notification-row">
+                <!-- notificatoin dropdown start-->
+                <ul class="nav pull-right top-menu">
+
+                    <!-- task notificatoin start -->
+
+                    <li class="dropdown">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <span class="profile-ava">
+                                <i class="fa fa-user"></i>
+                            </span>
+                            <span class="username">Parent</span>
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu extended logout">
+                            <div class="log-arrow-up"></div>
+                            <li class="eborder-top">
+                                <a href="p-student-registration.html"><i class="far fa-clipboard"></i>Register for New
+                                    Student</a>
+                            </li>
+                            <li>
+                                <a href="parent_login.html"><i class="icon_key_alt"></i> Log Out</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- user login dropdown end -->
+                </ul>
+                <!-- notificatoin dropdown end-->
+            </div>
+        </header>
+        <!--header end-->
+
+        <!--sidebar start-->
+        <aside>
+            <div id="sidebar" class="nav-collapse ">
+                <!-- sidebar menu start-->
+                <ul class="sidebar-menu">
+                    <li class="active">
+                        <a class="" href="parent_dashboard.html">
+                            <i class="icon_house_alt"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="sub-menu">
+                        <a class="" href="javascript:;">
+                            <i class="icon_document_alt"></i>
+                            <span>Student Profile</span>
+                            <span class="menu-arrow arrow_carrot-right"></span>
+                        </a>
+                        <ul class="sub">
+                            <li><a class="" href="p-student-profile.html">Basic Information</a></li>
+                            <li><a class="" href="p-exam_records.html">Exam Records</a></li>
+                            <li><a class="" href="p-admitCard.html">Print Admit Card</a></li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="p-fee_records.html" class="">
+                            <i class="far fa-credit-card"></i>
+                            <span>Fee Records</span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="p-notification.html" class="">
+                            <i class="far fa-bell"></i>
+                            <span>General Notifications</span>
+                        </a>
+                    </li>
+                </ul>
+                <!-- sidebar menu end-->
+            </div>
+        </aside>
+        <!--sidebar end-->
+
+        <!--main content start-->
+        <section id="main-content">
+            <section class="wrapper">
+                <!--overview start-->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h3 class="page-header"><i class="fas fa-book-reader b-icon"></i>Student Examination Details
+                        </h3>
+                        <ol class="breadcrumb">
+                            <li><i class="fa fa-home"></i><a href="parent_dashboard.html">Home</a></li>
+                            <li><i class="icon_document_alt"></i>Student Profile</li>
+                            <li><i class="fas fa-book-reader b-icon"></i>Student Examination Details</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="panel">
+                            <div class="panel-body">
+                                <div class="panel-heading">
+                                    <strong><span style="color:orange;">GKB</span><span class="lite">
+                                            International School</span> :Examination Records </strong>
+                                </div>
+
+
+                                <!-- Child-Profile Start -->
+                                <div class="row mg-top-30">
+                                    <div class="col-lg-12 col-sm-12">
+                                        <!-- Child List -->
+                                        <h3 class="text-center" style="letter-spacing:2px;color:orangered;"><strong>
+                                                YOUR CHILD'S LIST </strong></h3>
+                                        <div class="panel-body total-student-table">
+                                            <ul>
+                                                <li>
+                                                    <div class="col-md-3 col-sm-3">
+                                                        <a class="kid-link" data-toggle="tab" href="#student-1">
+                                                            <div class="kid-detail-box">
+                                                                <div class="item-img">
+                                                                    <img src="img/avatar1.jpg" alt="kids">
+                                                                </div>
+                                                                <div class="item-content">
+                                                                    <p>John Doe</p>
+                                                                    <p>Class <span>II</span></p>
+                                                                    <p><strong>D.O.B :</strong> <span>19-03-14</span>
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="col-md-3 col-sm-3">
+                                                        <a class="kid-link" data-toggle="tab" href="#student-2">
+                                                            <div class="kid-detail-box">
+                                                                <div class="item-img">
+                                                                    <img src="img/avatar1.jpg" alt="kids">
+                                                                </div>
+                                                                <div class="item-content">
+                                                                    <p>John Doe</p>
+                                                                    <p>Class <span>II</span></p>
+                                                                    <p><strong>D.O.B :</strong> <span>19-03-14</span>
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="col-md-3 col-sm-3">
+                                                        <a class="kid-link" data-toggle="tab" href="#student-3">
+                                                            <div class="kid-detail-box">
+                                                                <div class="item-img">
+                                                                    <img src="img/avatar1.jpg" alt="kids">
+                                                                </div>
+                                                                <div class="item-content">
+                                                                    <p>John Doe</p>
+                                                                    <p>Class <span>II</span></p>
+                                                                    <p><strong>D.O.B :</strong> <span>19-03-14</span>
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="col-md-3 col-sm-3">
+                                                        <a class="kid-link" data-toggle="tab" href="#student-4">
+                                                            <div class="kid-detail-box">
+                                                                <div class="item-img">
+                                                                    <img src="img/avatar1.jpg" alt="kids">
+                                                                </div>
+                                                                <div class="item-content">
+                                                                    <p>John Doe</p>
+                                                                    <p>Class <span>II</span></p>
+                                                                    <p><strong>D.O.B :</strong> <span>19-03-14</span>
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+
+                                        <div class="tab-content">
+                                            <div id="student-1" class="tab-pane mg-top-30">
+                                                <section class="panel">
+                                                    <div class="panel-body">
+                                                        <div class="panel-heading">
+                                                            <strong>Select Exam Type & Session to View
+                                                                Result</strong>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-sm-12 col-md-12">
+                                                                <div class="form-mg">
+                                                                    <form action="#" method="post">
+                                                                        <div class="form-group">
+                                                                            <div class="row">
+                                                                                <label for="reg-id"
+                                                                                    class="control-label col-sm-6"><strong>Registration
+                                                                                        Number :</strong></label>
+                                                                                <label for="reg-id"
+                                                                                    class="control-label col-sm-6">GKB-1256-5895</label>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="form-group">
+                                                                            <div class="row">
+                                                                                <label for="reg-id"
+                                                                                    class="control-label col-sm-6"><strong>Student
+                                                                                        Name :</strong></label>
+                                                                                <label for="reg-id"
+                                                                                    class="control-label col-sm-6">John
+                                                                                    Doe</label>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="form-group">
+                                                                            <div class="row">
+                                                                                <label for="reg-id"
+                                                                                    class="control-label col-sm-6"><strong>Class
+                                                                                        :</strong></label>
+                                                                                <label for="reg-id"
+                                                                                    class="control-label col-sm-6">II</label>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="form-group">
+                                                                            <div class="row">
+                                                                                <label for="reg-id"
+                                                                                    class="control-label col-sm-6"><strong>Select
+                                                                                        Session :</strong></label>
+                                                                                <div class="col-sm-6">
+                                                                                    <select id="year-select"
+                                                                                        class="form-control" required>
+                                                                                        <option value="">YYYY to YYYY
+                                                                                        </option>
+                                                                                        <option value="1">2017-2018
+                                                                                        </option>
+                                                                                        <option value="2">2018-2019
+                                                                                        </option>
+                                                                                        <option value="3">2019-2020
+                                                                                        </option>
+                                                                                        <option value="4">2020-2021
+                                                                                        </option>
+                                                                                        <option value="5">2021-2022
+                                                                                        </option>
+                                                                                        <option value="6">2022-2023
+                                                                                        </option>
+                                                                                        <option value="7">2023-2024
+                                                                                        </option>
+                                                                                        <option value="8">2024-2025
+                                                                                        </option>
+                                                                                        <option value="9">2025-2026
+                                                                                        </option>
+                                                                                        <option value="10">2026-2027
+                                                                                        </option>
+                                                                                    </select>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="form-group">
+                                                                            <div class="row">
+                                                                                <label for="reg-id"
+                                                                                    class="control-label col-sm-6"><strong>Select
+                                                                                        Exam Type
+                                                                                        :</strong></label>
+                                                                                <div class="col-sm-6">
+                                                                                    <select id="exam-type-select"
+                                                                                        class="form-control" required>
+                                                                                        <option value="">Select Exam
+                                                                                        </option>
+                                                                                        <option value="1">Class Test 1
+                                                                                        </option>
+                                                                                        <option value="2">Class Test 2
+                                                                                        </option>
+                                                                                        <option value="3">Half-Yearly
+                                                                                        </option>
+                                                                                        <option value="4">Annual
+                                                                                        </option>
+                                                                                    </select>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="form-group">
+                                                                            <div class="row text-center">
+                                                                                <input type="submit"
+                                                                                    class="btn btn-success"
+                                                                                    value="View & Download Record">
+                                                                                <button
+                                                                                    onclick="document.getElementById('student-1').style.display='none'"
+                                                                                    class="btn btn-danger">Close</button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+            </section>
+        </section>
+    </section>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui-1.10.4.min.js"></script>
+    <!-- bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.scrollTo.min.js"></script>
+    <script src="js/jquery.nicescroll.js" type="text/javascript"></script>
+    <!-- charts scripts -->
+    <script src="assets/jquery-knob/js/jquery.knob.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <!-- custom select -->
+    <script src="js/jquery.customSelect.min.js"></script>
+    <script src="assets/chart-master/Chart.js"></script>
+
+    <!--custome script for all page-->
+    <script src="js/scripts.js"></script>
+    <script src="js/main.js"></script>
+    <!-- custom script for this page-->
+    <script src="js/sparkline-chart.js"></script>
+    <script src="js/jquery.autosize.min.js"></script>
+    <script src="js/jquery.placeholder.min.js"></script>
+    <script src="js/jquery.slimscroll.min.js"></script>
+</body>
+
+</html>

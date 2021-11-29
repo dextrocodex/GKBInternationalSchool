@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo.jpg">
+
+    <title>Admission Records - GKB International School</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- bootstrap theme -->
+    <link href="css/bootstrap-theme.css" rel="stylesheet">
+    <!--external css-->
+    <!-- font icon -->
+    <link href="css/elegant-icons-style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="css/fullcalendar.css">
+    <link href="css/widgets.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-responsive.css" rel="stylesheet" />
+    <link href="css/jquery-ui-1.10.4.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- container section start -->
+    <section id="container" class="main-content">
+        <header class="header dark-bg">
+            <div class="toggle-nav">
+                <div class="icon-reorder tooltips" data-original-title="Toggle Navigation" data-placement="bottom"><i
+                        class="icon_menu"></i></div>
+            </div>
+
+            <!--logo start-->
+            <a href="index.html" class="logo">GKB <span class="lite">International School</span></a>
+            <!--logo end-->
+
+            <div class="nav search-row" id="top_menu">
+                <!--  search form start -->
+                <ul class="nav top-menu">
+                    <li>
+                        <form class="navbar-form">
+                            <input class="form-control" placeholder="Search" type="text">
+                        </form>
+                    </li>
+                </ul>
+                <!--  search form end -->
+            </div>
+
+            <div class="top-nav notification-row">
+                <!-- notificatoin dropdown start-->
+                <ul class="nav pull-right top-menu">
+
+                    <!-- task notificatoin start -->
+
+                    <li class="dropdown">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <span class="profile-ava">
+                                <i class="fa fa-user"></i>
+                            </span>
+                            <span class="username">Admin</span>
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu extended logout">
+                            <div class="log-arrow-up"></div>
+                            <li class="eborder-top">
+                                <a href="profile.html"><i class="icon_profile"></i> My Profile</a>
+                            </li>
+                            <li>
+                                <a href="admin_login.html"><i class="icon_key_alt"></i> Log Out</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- user login dropdown end -->
+                </ul>
+                <!-- notificatoin dropdown end-->
+            </div>
+        </header>
+        <!--header end-->
+
+        <!--sidebar start-->
+        <aside>
+            <div id="sidebar" class="nav-collapse ">
+                <!-- sidebar menu start-->
+                <ul class="sidebar-menu">
+                    <li class="active">
+                        <a class="" href="index.html">
+                            <i class="icon_house_alt"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="sub-menu">
+                        <a href="javascript:;" class="">
+                            <i class="fas fa-user-plus"></i>
+                            <span>Admissions</span>
+                            <span class="menu-arrow arrow_carrot-right"></span>
+                        </a>
+                        <ul class="sub">
+                            <li><a class="" href="student_application.html">Student Applications</a></li>
+                            <li><a class="" href="admission-students.html">Admission Management</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="" href="student_list.html">
+                            <i class="icon_document_alt"></i>
+                            <span>Student List</span>
+                        </a>
+                    </li>
+                    <li class="sub-menu">
+                        <a href="javascript:;" class="">
+                            <i class="far fa-credit-card"></i>
+                            <span>Fee Records</span>
+                            <span class="menu-arrow arrow_carrot-right"></span>
+                        </a>
+                        <ul class="sub">
+                            <li><a class="" href="fee_record.html">Add / View Expenses</a></li>
+                            <li><a class="" href="edit_fees.html">Edit Class Expenses</a></li>
+                            <li><a class="" href="all_expense.html">Expense Collection</a></li>
+                        </ul>
+                    </li>
+                    <li class="sub-menu">
+                        <a href="examination.html" class="">
+                            <i class="icon_contacts_alt"></i>
+                            <span>Examination Records</span>
+                        </a>
+                    </li>
+                    <li class="sub-menu">
+                        <a href="javascript:;" class="">
+                            <i class="far fa-credit-card"></i>
+                            <span>Master</span>
+                            <span class="menu-arrow arrow_carrot-right"></span>
+                        </a>
+                        <ul class="sub">
+                            <li><a class="" href="add_class_session.html">Add New Class/Session</a></li>
+                            <li><a class="" href="admin_login.html">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- sidebar menu end-->
+            </div>
+        </aside>
+        <!--sidebar end-->
+
+        <!--main content start-->
+        <section id="main-content">
+            <section class="wrapper">
+                <!--overview start-->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h3 class="page-header"><i class="fas fa-align-left b-icon"></i>Student Applications</h3>
+                        <ol class="breadcrumb">
+                            <li><i class="fa fa-home"></i><a href="index.html">Home</a></li>
+                            <li><i class="fas fa-user-plus b-icon"></i>Admissions</li>
+                            <li>Student Applications</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="panel">
+                            <div class="panel-body">
+                                <div class="panel-heading">
+                                    <strong><span style="color:orange;">GKB</span><span class="lite">
+                                            International School</span>: Application Records</strong>
+                                </div>
+                                <p>For admissions, GKB International School will be consultiong on:</p>
+                                <p>
+                                    <ul class="list-group-item">
+                                        <li>Changes to the definition of home address to highlight evidence required
+                                        </li>
+                                        <li>Changes to the definition regarding consideration of applications from
+                                            separated parents/careers to highlight evidence required for prime career
+                                        </li>
+                                    </ul>
+                                </p>
+                                <p>For New admissions to GKB International School, kindly click on : &nbsp;&nbsp; <a
+                                        href="student_registration.html" class="btn btn-success">New Admission</a></p>
+
+                                <!-- Application Details tabs -->
+                                <header class="panel-heading tab-bg-info mg-top-40">
+                                    <ul class="nav nav-tabs">
+                                        <li class="active">
+                                            <a data-toggle="tab" href="#applied-students">
+                                                <i class="icon-user"></i>
+                                                All Applied Students
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </header>
+
+                                <div class="tab-content">
+                                    <div id="applied-students" class="tab-pane tab-pane active">
+                                        <section class="panel">
+                                            <div class="row mg-top-30">
+                                                <div class="col-lg-12 col-md-12">
+                                                    <p>** <strong> Information regarding Student Application
+                                                            Registration:</strong></p>
+                                                    <p><i class="fas fa-arrow-circle-right"></i>Please note that every
+                                                        data entry of each applicant Id for a
+                                                        given admission process will be valid only till the deadline
+                                                        ends.
+                                                        <p><i class="fas fa-arrow-circle-right"></i> Once the deadline
+                                                            is reached, all the information regarding the <em>Applied
+                                                                Students</em> table will be removed for that particular
+                                                            Session. No Additional entry will be permitted until the
+                                                            dates are set again.</p>
+                                                        <p><i class="fas fa-arrow-circle-right"></i> You can set the
+                                                            <em> Admssion Registration Dates and
+                                                                Deadlines</em> from the <span
+                                                                style="color: orangered">Edit
+                                                                Admission Date</span> below. Please keep in mind that
+                                                            once the dates are "Submitted", an admission notification
+                                                            will be automatically posted to the School's <strong>
+                                                                News&Events </strong> Section Page</p>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-12 col-md-12 col-sm-12">
+                                                        <h3 style="color: orangered">
+                                                            <ul>EDIT ADMISSION DATES</ul>
+                                                        </h3>
+                                                        <form action="#" id="edit-adm-date" method="get">
+                                                            <div class="form-group text-center">
+                                                                <div class="row">
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12">
+                                                                        <label for="Class select"
+                                                                            class="control-label col-md-1 col-sm-1"><strong>For
+                                                                                Class :</strong></label>
+                                                                        <div class="col-md-2 col-sm-2 col-xs-4">
+                                                                            <select id="inputClass"
+                                                                                class="search-input form-control"
+                                                                                required>
+                                                                                <option value="">-Class Search-</option>
+                                                                                <option value="1">Nursery</option>
+                                                                                <option value="2">K.G 1</option>
+                                                                                <option value="3">K.G 2</option>
+                                                                                <option value="4">I</option>
+                                                                                <option value="5">II</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group text-center">
+                                                                <label for="Starting date"
+                                                                    class="col-md-2 col-sm-6 control-label"><strong>
+                                                                        Starting Date :</strong></label>
+                                                                <div class="col-lg-2 col-md-2 col-sm-4">
+                                                                    <input type="date" class="form-control">
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group text-center">
+                                                                <label for="Starting date"
+                                                                    class="col-md-2 col-sm-6 control-label"><strong>
+                                                                        Deadline Date :</strong></label>
+                                                                <div class="col-lg-2 col-md-2 col-sm-4">
+                                                                    <input type="date" class="form-control">
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group text-center">
+                                                                <input type="submit" value="Submit"
+                                                                    class="ml-10 col-md-1 col-sm-4 btn btn-success">
+                                                                <input type="reset" value="Reset"
+                                                                    class="ml-10 col-md-1 col-sm-4 btn btn-primary">
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                                <div class="row separator mg-top-30"></div>
+                                                <div class="row">
+                                                    <div class="col-md-12 col-sm-12 col-xs-12">
+                                                        <h3 style="color: orangered">
+                                                            <ul>STUDENT APPLICATIONS</ul>
+                                                        </h3>
+                                                        <ul class="list-group-item">
+                                                            <li><i class="fas fa-arrow-circle-right"></i> For Screening
+                                                                of the <em>Selected Students</em> in a given Session,
+                                                                mark all the eligible Student's checkboxes and click on
+                                                                <span style="color: rgb(19, 170, 216);">Grant
+                                                                    Admission</span>
+
+                                                            </li>
+                                                            <li><i class="fas fa-arrow-circle-right"></i> For viewing
+                                                                the profile of a Student, mark all the preferred
+                                                                Student's checkboxes and click on <span
+                                                                    style="color:orange;">View Profile</span></li>
+                                                        </ul>
+                                                        <div class="row mg-top-30 ">
+                                                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                                                <div class="col-md-2 col-sm-4">
+                                                                    <select id="inputSession"
+                                                                        class="search-input form-control" required>
+                                                                        <option value="">-Session Search-</option>
+                                                                        <option value="1">2017-2018</option>
+                                                                        <option value="2">2019-2020</option>
+                                                                        <option value="3">2020-2021</option>
+                                                                        <option value="4">2021-2022</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="col-md-2 col-sm-3">
+                                                                    <select id="inputClass"
+                                                                        class="search-input form-control" required>
+                                                                        <option value="">-Class Search-</option>
+                                                                        <option value="1">Nursery</option>
+                                                                        <option value="2">K.G 1</option>
+                                                                        <option value="3">K.G 2</option>
+                                                                        <option value="4">I</option>
+                                                                        <option value="5">II</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="col-md-1 col-sm-2"><button
+                                                                        id="studentSearch"
+                                                                        class="btn btn-primary">Search</button>
+                                                                </div>
+                                                                <div class="col-md-1 col-sm-2 "><button id="buttonReset"
+                                                                        onclick="performReset3()"
+                                                                        class="btn btn-danger">Reset</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="panel-body total-fee-table">
+                                                <table id="student-info-table" class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="sorting" tabindex="0" rowspan="1" colspan="1"
+                                                                style="width: 95px;">Application No.</th>
+                                                            <th class="sorting" tabindex="0" rowspan="1" colspan="1"
+                                                                style="width: 95px;">Name</th>
+                                                            <th class="sorting" tabindex="0" rowspan="1" colspan="1"
+                                                                style="width: 50px;">Gender</th>
+                                                            <th class="sorting" tabindex="0" rowspan="1" colspan="1"
+                                                                style="width: 80px;">Parent/Guardian Name</th>
+                                                            <th class="sorting" tabindex="0" rowspan="1" colspan="1"
+                                                                style="width: 40px;">Class</th>
+                                                            <th class="sorting" tabindex="0" rowspan="1" colspan="1"
+                                                                style="width: 50px;">Applied Date</th>
+                                                            <th class="sorting" tabindex="0" rowspan="1" colspan="1"
+                                                                style="width: 50px;">Applied Through</th>
+                                                            <th class="sorting" tabindex="0" rowspan="1" colspan="1"
+                                                                style="width: 50px;">Session</th>
+                                                            <th class="sorting" tabindex="0" rowspan="1" colspan="1"
+                                                                style="width: 50px;">Payment Confirmed</th>
+                                                            <th class="sorting" tabindex="0" rowspan="1" colspan="1"
+                                                                style="width: 50px;">Action</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody class="expense-body">
+                                                        <tr class="item text-center">
+                                                            <td>GKB-ADM-2192</td>
+                                                            <td>John Doe</td>
+                                                            <td>Male</td>
+                                                            <td>Albert Doe</td>
+                                                            <td>L.K.G</td>
+                                                            <td>17-07-2019</td>
+                                                            <td>Online</td>
+                                                            <td>2018</td>
+                                                            <td class="badge badge-paid "> Yes </td>
+                                                            <td><input type="checkbox" name="selected"
+                                                                    class="sel-stu checkbox-inline"></td>
+                                                        </tr>
+                                                        <tr class="item text-center">
+                                                            <td>GKB-ADM-2192</td>
+                                                            <td>John Doe</td>
+                                                            <td>Male</td>
+                                                            <td>Albert Doe</td>
+                                                            <td>L.K.G</td>
+                                                            <td>17-07-2019</td>
+                                                            <td>By Admin</td>
+                                                            <td>2018</td>
+                                                            <td class="badge badge-danger "> No </td>
+                                                            <td><input type="checkbox" name="selected"
+                                                                    class="sel-stu checkbox-inline"></td>
+                                                        </tr>
+                                                        <tr class="item text-center">
+                                                            <td>GKB-ADM-2192</td>
+                                                            <td>John Doe</td>
+                                                            <td>Male</td>
+                                                            <td>Albert Doe</td>
+                                                            <td>L.K.G</td>
+                                                            <td>17-07-2019</td>
+                                                            <td>Online</td>
+                                                            <td>2018</td>
+                                                            <td class="badge badge-paid"> Yes </td>
+                                                            <td><input type="checkbox" name="selected"
+                                                                    class="sel-stu checkbox-inline"></td>
+                                                        </tr>
+                                                        <tr class="item text-center">
+                                                            <td>GKB-ADM-2192</td>
+                                                            <td>John Doe</td>
+                                                            <td>Male</td>
+                                                            <td>Albert Doe</td>
+                                                            <td>L.K.G</td>
+                                                            <td>17-07-2019</td>
+                                                            <td>Online</td>
+                                                            <td>2018</td>
+                                                            <td class="badge badge-danger"> No </td>
+                                                            <td><input type="checkbox" name="selected"
+                                                                    class="sel-stu checkbox-inline"></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-6 col-sm-6 col-md-6">
+                                                    <div class="col-lg-3 col-md-3 col-sm-3 mg-top-30 left">
+                                                        <button class="badge d-block badge-warning"
+                                                            onclick="document.getElementById('view-student').style.display='block'">View
+                                                            Profile</button>
+                                                    </div>
+                                                    <div class="col-lg-3 col-md-3 col-sm-6 mg-top-30 right">
+                                                        <button class="badge d-block badge-pending">Grant Admit</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </section>
+
+    <!-- Modal Student-edit start -->
+    <div id="view-student" class="modal">
+        <span onclick="document.getElementById('view-student').style.display='none'" class="close"
+            title="Close Modal"><i class="fas fa-times-circle"></i></span>
+        <div class="fee-box modal-content">
+            <div class="row">
+                <div class="col-lg-12">
+                    <section class="panel panel-student">
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <ol class="breadcrumb">
+                                        <label><i class="far fa-user"></i> &nbsp;<strong>Student </strong>&nbsp;
+                                            :</label>
+                                        <li><label>1234-5678</label></li>
+                                        <li><label>John Doe</label></li>
+                                        <li><label>Class X</label></li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <header class="panel-heading tab-bg-info">
+                                <ul class="nav nav-tabs">
+                                    <li class="active">
+                                        <a data-toggle="tab" href="#basic-information">
+                                            <i class="icon-user"></i>
+                                            Basic Information
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a data-toggle="tab" href="#supported-document">
+                                            <i class="icon-envelope"></i>
+                                            Supported Documents
+                                        </a>
+                                    </li>
+                                </ul>
+                            </header>
+
+                            <div class="tab-content">
+                                <div id="basic-information" class="tab-pane tab-pane active">
+                                    <section class="panel">
+                                        <div class="bio-graph-heading">
+                                            <div class="student-photo">
+                                                <img src="img/avatar1.jpg" alt="student-photo">
+                                            </div>
+                                        </div>
+                                        <div class="panel-body bio-graph-info">
+                                            <div class="row">
+                                                <div class="bio-row">
+                                                    <div class="col-sm-6">
+                                                        <span><strong> Name : </strong></span>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <span> John Doe</span>
+                                                    </div>
+                                                </div>
+                                                <div class="bio-row">
+                                                    <div class="col-sm-6">
+                                                        <span><strong> Parent's Name : </strong></span>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <span> Albert Doe</span>
+                                                    </div>
+                                                </div>
+                                                <div class="bio-row">
+                                                    <div class="col-sm-6">
+                                                        <span><strong>Year of Joining and joining class :
+                                                            </strong></span>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <span> Class X in the year 2014 </span>
+                                                    </div>
+                                                </div>
+                                                <div class="bio-row">
+                                                    <div class="col-sm-6">
+                                                        <span><strong>Gender : </strong></span>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <span> Male </span>
+                                                    </div>
+                                                </div>
+                                                <div class="bio-row">
+                                                    <div class="col-sm-6">
+                                                        <span><strong>Date of Birth : </strong></span>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <span> 27 October 1994 </span>
+                                                    </div>
+                                                </div>
+                                                <div class="bio-row">
+                                                    <div class="col-sm-6">
+                                                        <span><strong>Permanent Address : </strong></span>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <span> H no X, ABC Lane, Guwahati,
+                                                            Assam, India - 781038 </span>
+                                                    </div>
+                                                </div>
+                                                <div class="bio-row">
+                                                    <div class="col-sm-6">
+                                                        <span><strong>Email : </strong></span>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <span> johndoe@mailname.com </span>
+                                                    </div>
+                                                </div>
+                                                <div class="bio-row">
+                                                    <div class="col-sm-6">
+                                                        <span><strong>Contact No : </strong></span>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <span> (+91) 98640 xxxxx </span>
+                                                    </div>
+                                                </div>
+                                                <div class="bio-row">
+                                                    <div class="col-sm-6">
+                                                        <span><strong>Medical Related Information : </strong></span>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <span> No </span>
+                                                    </div>
+                                                </div>
+                                                <div class="bio-row">
+                                                    <div class="col-sm-6">
+                                                        <span><strong>Require Bus Transport? : </strong></span>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <span> Yes </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+                                <!-- supported documents -->
+                                <div id="supported-document" class="tab-pane">
+                                    <section class="panel">
+                                        <div class="panel-body bio-graph-info">
+                                            <div class="row">
+                                                <div class="bio-row">
+                                                    <div class="col-sm-6">
+                                                        <span><strong>Residential Address proof : </strong></span>
+                                                        <span>Driving Licence</span>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <div class="student-attachment">
+                                                            <a href="img/attachments/indiaDrivingLicense.jpg"
+                                                                download="Residential_proof"><img
+                                                                    src="img/attachments/indiaDrivingLicense.jpg"
+                                                                    alt="Residential_proof"></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="bio-row">
+                                                    <div class="col-sm-6">
+                                                        <span><strong>Proof of Birth Certificate : </strong></span>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <div class="student-attachment">
+                                                            <a href="img/attachments/Birth_Certificate commerce.jpg"
+                                                                download="Residential_proof"><img
+                                                                    src="img/attachments/Birth_Certificate commerce.jpg"
+                                                                    alt="Residential_proof"></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="bio-row">
+                                                    <div class="col-sm-6">
+                                                        <span><strong>Student Identification Photo : </strong></span>
+                                                        <span>John Doe</span>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <div class="student-attachment">
+                                                            <a href="img/avatar1.jpg"
+                                                                download="Identification_proof"><img
+                                                                    src="img/avatar1.jpg"
+                                                                    alt="Identification_proof"></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="bio-row">
+                                                    <div class="col-sm-6">
+                                                        <span><strong>Parent's/ Guardian’s recent
+                                                                passport size photo : </strong></span>
+                                                        <span>Albert Doe</span>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <div class="student-attachment">
+                                                            <a href="img/attachments/parent.jpg"
+                                                                download="Identification_proof_2"><img
+                                                                    src="img/attachments/parent.jpg"
+                                                                    alt="Identification_proof"></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="bio-row">
+                                                    <div class="col-sm-6">
+                                                        <span><strong>Medical Certificate and
+                                                                Immunization Certificate : </strong></span>
+                                                        <span>Medical Form</span>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <div class="student-attachment">
+                                                            <a href="img/attachments/Medical-Certificate-Template.jpg"
+                                                                download="Medical_proof"><img
+                                                                    src="img/attachments/Medical-Certificate-Template.jpg"
+                                                                    alt="Medical_proof"></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-offset-5 col-md-6">
+                                        <button type="button"
+                                            onclick="document.getElementById('view-student').style.display='none'"
+                                            class="cancelbtn btn-danger">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- javascripts -->
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui-1.10.4.min.js"></script>
+    <!-- bootstrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- nice scroll -->
+    <script src="js/jquery.scrollTo.min.js"></script>
+    <script src="js/jquery.nicescroll.js" type="text/javascript"></script>
+    <!-- charts scripts -->
+    <script src="assets/jquery-knob/js/jquery.knob.js"></script>
+    <script src="js/jquery.sparkline.js" type="text/javascript"></script>
+    <script src="js/owl.carousel.js"></script>
+    <!-- jQuery full calendar -->
+    </script>
+    <!-- Full Google Calendar - Calendar -->
+    <script src="/path/to/jquery.min.js"></script>
+    <script src="/path/to/moment.min.js"></script>
+
+    <!--custome script for all page-->
+    <script src="js/filter.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/jquery.placeholder.min.js"></script>
+    <script src="js/jquery.slimscroll.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo.jpg">
+
+    <title>Registration Page - GKB International School</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- bootstrap theme -->
+    <link href="css/bootstrap-theme.css" rel="stylesheet">
+    <link href="css/elegant-icons-style.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!--external css-->
+    <!-- font icon -->
+    <link href="css/elegant-icons-style.css" rel="stylesheet" />
+    <link href="css/font-awesome.css" rel="stylesheet" />
+    <!-- Custom styles -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-responsive.css" rel="stylesheet" />
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+    <!-- container section start -->
+    <section id="container" class="main-content">
+        <header class="header dark-bg">
+            <div class="toggle-nav">
+                <div class="icon-reorder tooltips" data-original-title="Toggle Navigation" data-placement="bottom"><i
+                        class="icon_menu"></i></div>
+            </div>
+
+            <!--logo start-->
+            <a href="index.html" class="logo">GKB <span class="lite">International School</span></a>
+            <!--logo end-->
+
+            <div class="nav search-row" id="top_menu">
+                <!--  search form start -->
+                <ul class="nav top-menu">
+                    <li>
+                        <form class="navbar-form">
+                            <input class="form-control" placeholder="Search" type="text">
+                        </form>
+                    </li>
+                </ul>
+                <!--  search form end -->
+            </div>
+
+            <div class="top-nav notification-row">
+                <!-- notificatoin dropdown start-->
+                <ul class="nav pull-right top-menu">
+
+                    <!-- task notificatoin start -->
+
+                    <li class="dropdown">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <span class="profile-ava">
+                                <i class="fa fa-user"></i>
+                            </span>
+                            <span class="username">Admin</span>
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu extended logout">
+                            <div class="log-arrow-up"></div>
+                            <li class="eborder-top">
+                                <a href="index.html"><i class="icon_house_alt"></i>Dashboard</a>
+                            </li>
+                            <li>
+                                <a href="profile.html"><i class="icon_profile"></i> My Profile</a>
+                            </li>
+                            <li>
+                                <a href="admission-students.html"><i class="fas fa-user-plus"></i>Admission</a>
+                            </li>
+                            <li>
+                                <a href="fee_record.html"><i class="icon_creditcard"></i>Fee Records</a>
+                            </li>
+                            <li>
+                                <a href="examination.html"><i class="icon_archive_alt"></i>Examination Records</a>
+                            </li>
+                            <li>
+                                <a href="admin_login.html"><i class="icon_key_alt"></i> Log Out</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- user login dropdown end -->
+                </ul>
+                <!-- notificatoin dropdown end-->
+            </div>
+        </header>
+        <!--header end-->
+
+        <!--sidebar start-->
+        <aside>
+            <div id="sidebar" class="nav-collapse ">
+                <!-- sidebar menu start-->
+                <ul class="sidebar-menu">
+                    <li class="active">
+                        <a class="" href="index.html">
+                            <i class="icon_house_alt"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="admission-students.html" class="">
+                            <i class="fas fa-user-plus"></i>
+                            <span>Admission</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="" href="student_profile.html">
+                            <i class="icon_document_alt"></i>
+                            <span>Student Profile</span>
+                        </a>
+                    </li>
+                    <li class="sub-menu">
+                        <a href="javascript:;" class="">
+                            <i class="far fa-credit-card"></i>
+                            <span>Fee Records</span>
+                            <span class="menu-arrow arrow_carrot-right"></span>
+                        </a>
+                        <ul class="sub">
+                            <li><a class="" href="fee_record.html">Add / View Expenses</a></li>
+                            <li><a class="" href="edit_fees.html">Edit Class Expenses</a></li>
+                            <li><a class="" href="all_expense.html">Expense Collection</a></li>
+                        </ul>
+                    </li>
+                    <li class="sub-menu">
+                        <a href="examination.html" class="">
+                            <i class="icon_contacts_alt"></i>
+                            <span>Examination Records</span>
+                        </a>
+                    </li>
+                    <li class="sub-menu">
+                        <a href="javascript:;" class="">
+                            <i class="far fa-credit-card"></i>
+                            <span>Master</span>
+                            <span class="menu-arrow arrow_carrot-right"></span>
+                        </a>
+                        <ul class="sub">
+                            <li><a class="" href="add_class_session.html">Add New Class/Session</a></li>
+                            <li style="color:orangered;"><a class="" href="admin_login.html">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- sidebar menu end-->
+            </div>
+        </aside>
+
+        <!--main content start-->
+        <section id="main-content">
+            <section class="wrapper">
+                <!--overview start-->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <section class="panel panel-main">
+                            <header class="panel-heading form-heading"><span style="color:#fed189;">GKB </span><span
+                                    class="lite">International School</span> : New Student Admission Form</header>
+                            <div class="panel-body">
+                                <p>Dear Parent/Guardian,</p>
+                                <p>Welcome to our school's Admission Center. Please use this form to apply for your
+                                    child's
+                                    admission to our school. We need complete an accurate information about the student,
+                                    so
+                                    make sure you fill out all fields. School Admission Forms are processed within 48
+                                    hours. You
+                                    will receive an email confirmation when we process your application.</p>
+                                <div class="row">
+                                    <div class="col-lg-12  pull-right">
+                                        <a href="admission-students.html" class="btn btn-danger"><i
+                                                class="fas fa-arrow-left"></i> &nbsp; Go Back to Admission
+                                            Records</a>
+                                    </div>
+                                </div>
+                                <!-- categories -->
+                                <header class="panel-heading tab-bg-info">
+                                    <ul class="nav nav-tabs">
+                                        <li class="active">
+                                            <a data-toggle="tab" href="#basic-information">
+                                                <i class="icon-user"></i>
+                                                Basic Information
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a data-toggle="tab" href="#document-upload">
+                                                <i class="icon-envelope"></i>
+                                                Document Upload
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </header>
+                                <!-- Registration-form -->
+                                <div class="tab-content">
+                                    <div id="basic-information" class="tab-pane tab-pane active">
+                                        <section class="panel">
+                                            <div class="panel-body">
+                                                <form class="registration-body" action="payment_portal.html"
+                                                    method="post">
+                                                    <div class="form-group">
+                                                        <label class="col-sm-4 control-label"><strong>Student's Name<sup
+                                                                    style="color:red">*</sup></strong> : </label>
+                                                        <div class="col-sm-4 ">
+                                                            <input type="text" class="form-control"
+                                                                placeholder="First Name" required>
+                                                        </div>
+                                                        <div class="col-sm-4 ">
+                                                            <input type="text" class="form-control"
+                                                                placeholder="Last Name" required>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="col-sm-4 control-label"><strong>Parent/Guardian
+                                                                Name<sup style="color:red">*</sup></strong> : </label>
+                                                        <div class="col-sm-4 ">
+                                                            <input type="text" class="form-control"
+                                                                placeholder="First Name" required>
+                                                        </div>
+                                                        <div class="col-sm-4 ">
+                                                            <input type="text" class="form-control"
+                                                                placeholder="Last Name" required>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="col-sm-4 control-label"><strong>Gender<sup
+                                                                    style="color:red">*</sup></strong> : </label>
+                                                        <div class="col-sm-8">
+                                                            <div class="col-sm-6">
+                                                                <select class="form-control" required>
+                                                                    <option value="">- Choose Gender-</option>
+                                                                    <option value="1">Male</option>
+                                                                    <option value="2">Female</option>
+                                                                    <option value="3">Other</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="col-sm-3 control-label "><strong>Class you want to
+                                                                Apply
+                                                                <sup style="color:red">*</sup></strong> : </label>
+                                                        <div class="col-sm-2">
+                                                            <select id="class-select" class="form-control" required>
+                                                                <option value="">-Select-</option>
+                                                                <option value="1">Nursery</option>
+                                                                <option value="2">K.G 1</option>
+                                                                <option value="3">K.G 2</option>
+                                                                <option value="4">I</option>
+                                                                <option value="5">II</option>
+                                                                <option value="6">III</option>
+                                                                <option value="7">IV</option>
+                                                                <option value="8">V</option>
+                                                                <option value="9">VI</option>
+                                                                <option value="10">VII</option>
+                                                                <option value="11">VIII</option>
+                                                                <option value="12">IX</option>
+                                                                <option value="13">X</option>
+                                                                <option value="14">XI</option>
+                                                                <option value="15">XII</option>
+                                                            </select>
+                                                        </div>
+                                                        <label class="col-sm-3 control-label "><strong>for the
+                                                                Session<sup style="color:red">*</sup></strong> :
+                                                        </label>
+                                                        <div class="col-sm-4">
+                                                            <select id="year-select" class="form-control" required>
+                                                                <option value="">YYYY to YYYY</option>
+                                                                <option value="1">2017-18</option>
+                                                                <option value="2">2018-2019</option>
+                                                                <option value="3">2019-2020</option>
+                                                                <option value="4">2020-2021</option>
+                                                                <option value="5">2021-2022</option>
+                                                                <option value="6">2022-2023</option>
+                                                                <option value="7">2023-2024</option>
+                                                                <option value="8">2024-2025</option>
+                                                                <option value="9">2025-2026</option>
+                                                                <option value="10">2026-2027</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="col-sm-2 control-label "><strong>Student's DoB<sup
+                                                                    style="color:red">*</sup></strong> : </label>
+                                                        <div class="col-sm-4">
+                                                            <input type="date" class="form-control"
+                                                                placeholder="dd-mm-yyyy" required>
+                                                        </div>
+                                                        <label class="col-sm-2 control-label "><strong>Email</strong>
+                                                            (optional)
+                                                            : </label>
+                                                        <div class="col-sm-4">
+                                                            <input type="email" maxlength="50" class="form-control"
+                                                                placeholder="johndoe@gmail.com">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="col-sm-4 control-label"><strong>Current
+                                                                Address<sup style="color:red">*</sup></strong> :
+                                                        </label>
+                                                        <div class="col-sm-8">
+                                                            <input type="text" id="addr1" class="form-control"
+                                                                placeholder="Street Address Line 1" required>
+                                                            <input type="text" id="addr2" class="form-control"
+                                                                placeholder="Street Address Line 2" required>
+                                                            <div class="row">
+                                                                <div class="col-sm-6">
+                                                                    <input type="text" id="addrCity"
+                                                                        class="form-control" placeholder="City"
+                                                                        required>
+                                                                </div>
+                                                                <div class="col-sm-6">
+                                                                    <input type="text" id="addrState"
+                                                                        class="form-control" placeholder="State"
+                                                                        required>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-sm-6">
+                                                                    <input type="number" minlength="6" maxlength="8"
+                                                                        id="addrPin" class="form-control"
+                                                                        placeholder="Postal/ Zip code" required>
+                                                                </div>
+                                                                <div class="col-sm-6">
+                                                                    <select id="addrCountry" class="form-control">
+                                                                        <option value="">- Choose Country-</option>
+                                                                        <option value="1">India</option>
+                                                                        <option value="2">China</option>
+                                                                        <option value="3">Sri Lanka</option>
+                                                                        <option value="4">Germany</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="row">
+                                                            <label for="fillAddress"
+                                                                class="col-sm-6 text-center control-label">Check if your
+                                                                current address is same as your permanent
+                                                                address</label>
+                                                            <div class="col-sm-6">
+                                                                <input type="checkbox" class="check-perm form-control"
+                                                                    id="filladdress" onclick="fillAddress()">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group" id="permanent-address">
+                                                        <label class="col-sm-4 control-label"><strong>Permanent
+                                                                Address<sup style="color:red">*</sup></strong> :
+                                                        </label>
+                                                        <div class="col-sm-8">
+                                                            <input type="text" id="peraddr1" class="form-control"
+                                                                placeholder="Street Address Line 1" required>
+                                                            <input type="text" id="peraddr2" class="form-control"
+                                                                placeholder="Street Address Line 2" required>
+                                                            <div class="row">
+                                                                <div class="col-sm-6">
+                                                                    <input type="text" id="peraddr3"
+                                                                        class="form-control" placeholder="City"
+                                                                        required>
+                                                                </div>
+                                                                <div class="col-sm-6">
+                                                                    <input type="text" id="peraddr4"
+                                                                        class="form-control" placeholder="State"
+                                                                        required>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-sm-6">
+                                                                    <input type="number" minlength="6" maxlength="8"
+                                                                        id="peraddr5" class="form-control"
+                                                                        placeholder="Postal/ Zip code" required>
+                                                                </div>
+                                                                <div class="col-sm-6">
+                                                                    <select id="peraddr6" class="form-control">
+                                                                        <option value="">- Choose Country-</option>
+                                                                        <option value="1">India</option>
+                                                                        <option value="2">China</option>
+                                                                        <option value="3">Sri Lanka</option>
+                                                                        <option value="4">Germany</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="col-sm-4 control-label "><strong>Contact No.<sup
+                                                                    style="color:red">*</sup></strong> : </label>
+                                                        <div class="col-sm-8">
+                                                            <input type="text" maxlength="10" class="form-control"
+                                                                placeholder="+91-" required>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="col-sm-8">
+                                                            <label class="control-label "><strong>Is there any medical
+                                                                    information
+                                                                    related
+                                                                    to the student, that you would like the
+                                                                    school to be aware of?<sup
+                                                                        style="color:red">*</sup></strong></label>
+                                                        </div>
+                                                        <div class="col-sm-4">
+                                                            <input type="radio" name="question-1" id="gender-m">
+                                                            <label for="question-y">Yes</label><br>
+                                                            <input type="radio" name="question-1" id="gender-f">
+                                                            <label for="question-n">No</label>
+                                                        </div>
+                                                        <div class="col-sm-6">
+                                                            <label class="control-label ">If yes, kindly mention the
+                                                                specificity of it</strong></label>
+                                                        </div>
+                                                        <div class="col-sm-6">
+                                                            <textarea name="medical-info" id="medical-info"
+                                                                class="form-control" cols="15" rows="4"></textarea>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="col-sm-8 control-label "><strong>Do you want to
+                                                                request
+                                                                transportation
+                                                                services for the student?<sup
+                                                                    style="color:red">*</sup></strong></label>
+                                                        <div class="col-sm-4">
+                                                            <input type="radio" name="question-2" id="gender-m">
+                                                            <label for="question-y">Yes</label><br>
+                                                            <input type="radio" name="question-2" id="gender-f">
+                                                            <label for="question-n">No</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="col-sm-12 control-label"><sup
+                                                                style="color:green">*</sup><em>By clicking on
+                                                                <strong>Save and
+                                                                    Continue</strong> you will be agreeing to our terms
+                                                                and
+                                                                conditions relevant to our school's policy.</em></label>
+                                                        <div class="col-sm-6"><br>
+                                                            <a data-toggle="tab" href="#document-upload"></a><input
+                                                                type="submit" class="btn btn-success form-control"
+                                                                name="saveAndContinue" value="Save And Continue"
+                                                                required></a>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </section>
+                                    </div>
+                                    <!-- basic-information end -->
+                                    <!-- document-upload start -->
+                                    <div id="document-upload" class="tab-pane">
+                                        <section class="panel">
+                                            <div class="panel-body">
+                                                <form class="registration-body" action="successful_registration.html"
+                                                    method="post">
+                                                    <header style="margin-bottom:20px;">
+                                                        <h3><strong>Upload Specific Files here</strong> : </h3>
+                                                    </header>
+                                                    <div class="form-group">
+                                                        <div class="col-sm-6">
+                                                            <label class="control-label"><strong>Proof of Residential
+                                                                    Address</strong>
+                                                                <p>(Aadhar Card, Ration Card/Smart Card, Voter I-Card,
+                                                                    Electricity bill)</p>
+                                                            </label>
+                                                        </div>
+                                                        <div class="col-sm-6">
+                                                            <input id="fileUpload"
+                                                                class="form-control identity-image-file" type="file" />
+                                                            <input type="submit" id="btnUpload" value="Upload"
+                                                                onclick="return ValidateExtension()" /><br />
+                                                            <span id="lblError" style="color: red;"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="col-sm-6">
+                                                            <label class="control-label"><strong>Proof of Birth
+                                                                    Certificate</strong></label>
+                                                        </div>
+                                                        <div class="col-sm-6">
+                                                            <input id="fileUpload1"
+                                                                class="form-control identity-image-file" type="file" />
+                                                            <input type="submit" id="btnUpload" value="Upload"
+                                                                onclick="return ValidateExtension1()" /><br />
+                                                            <span id="lblError1" style="color: red;"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="col-sm-6">
+                                                            <label class="control-label "><strong>Student
+                                                                    Identification
+                                                                    Photo</strong>
+                                                                <p>(Max file size: 80kb)</p>
+                                                            </label>
+                                                        </div>
+                                                        <div class="col-sm-6">
+                                                            <input id="fileUpload2"
+                                                                class="form-control identity-image-file" type="file" />
+                                                            <input type="submit" id="btnUpload" value="Upload"
+                                                                onclick="return ValidateExtension2()" /><br />
+                                                            <span id="lblError2" style="color: red;"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="col-sm-6">
+                                                            <label class="control-label "><strong>Parent's/ Guardian’s
+                                                                    recent
+                                                                    passport size photo</strong>
+                                                                <p>(Max file size: 80kb)</p>
+                                                            </label>
+                                                        </div>
+                                                        <div class="col-sm-6">
+                                                            <input id="fileUpload3"
+                                                                class="form-control identity-image-file" type="file" />
+                                                            <input type="submit" id="btnUpload" value="Upload"
+                                                                onclick="return ValidateExtension3()" /><br />
+                                                            <span id="lblError3" style="color: red;"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="col-sm-6">
+                                                            <label class="control-label "><strong>Medical Certificate
+                                                                    and
+                                                                    Immunization Certificate</strong>
+                                                                <p>(If any)</p>
+                                                            </label>
+                                                        </div>
+                                                        <div class="col-sm-6">
+                                                            <input id="fileUpload4"
+                                                                class="form-control identity-image-file" type="file" />
+                                                            <input type="submit" id="btnUpload" value="Upload"
+                                                                onclick="return ValidateExtension4()" /><br />
+                                                            <span id="lblError4" style="color: red;"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="col-sm-12">
+                                                            <div class="col-sm-3">
+                                                                <a data-toggle="tab" href="#basic-information"
+                                                                    class="form-control btn btn-danger"><i
+                                                                        class="fas fa-arrow-left"></i> &nbsp; Go
+                                                                    Back</a>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <input type="submit"
+                                                                    class="form-control btn btn-success"
+                                                                    name="saveAndContinue"
+                                                                    onclick="validateRegistration()"
+                                                                    value="Save And Submit" required>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </section>
+
+
+
+
+
+    <!-- javascripts -->
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui-1.10.4.min.js"></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-1.9.2.custom.min.js"></script>
+    <!-- bootstrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- nice scroll -->
+    <script src="js/jquery.scrollTo.min.js"></script>
+    <script src="js/jquery.nicescroll.js" type="text/javascript"></script>
+    <!-- charts scripts -->
+    <script src="assets/jquery-knob/js/jquery.knob.js"></script>
+    <script src="js/jquery.sparkline.js" type="text/javascript"></script>
+    <script src="js/owl.carousel.js"></script>
+    <!-- jQuery full calendar -->
+    </script>
+    <script src="js/calendar-custom.js"></script>
+    <script src="js/jquery.rateit.min.js"></script>
+    <!-- custom select -->
+    <script src="js/jquery.customSelect.min.js"></script>
+    <script src="assets/chart-master/Chart.js"></script>
+
+    <!--custome script for all page-->
+    <script src="js/filter.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/scripts.js"></script>
+    <!-- custom script for this page-->
+    <script src="js/jquery.slimscroll.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo.jpg">
+
+    <title>Payments Portal- GKB International School</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- bootstrap theme -->
+    <link href="css/bootstrap-theme.css" rel="stylesheet">
+    <!--external css-->
+    <!-- font icon -->
+    <link href="css/elegant-icons-style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- full calendar css-->
+    <link href="assets/fullcalendar/fullcalendar/bootstrap-fullcalendar.css" rel="stylesheet" />
+    <link href="assets/fullcalendar/fullcalendar/fullcalendar.css" rel="stylesheet" />
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="css/fullcalendar.css">
+    <link href="css/widgets.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-responsive.css" rel="stylesheet" />
+    <link href="css/jquery-ui-1.10.4.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- container section start -->
+    <section id="container" class="main-content">
+        <header class="header dark-bg">
+
+            <!--logo start-->
+            <a href="index.html" class="logo">GKB <span class="lite">International School</span></a>
+            <!--logo end-->
+        </header>
+        <!--header end-->
+
+        <!--main content start-->
+        <section>
+            <section class="wrapper">
+                <!--overview start-->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h3 class="page-header"><i class="fas fa-money-check-alt b-icon"></i>Payment Portal</h3>
+                        <ol class="breadcrumb">
+                            <li><i class="fa fa-home"></i><a href="index.html">Home</a></li>
+                            <li><i class="fas fa-user-plus b-icon"></i>Admission</li>
+                            <li><i class="fas fa-money-check-alt b-icon"></i>Payment Portal</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="panel">
+                            <div class="panel-body">
+                                <div class="payment-details-body">
+                                    <div class="panel-heading heading-layout1">
+                                        <strong>Payment Details</strong>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <p>Once your payment is submitted, please do not use the browser back button
+                                                or press refresh.
+                                                Doing so may result in an <strong>error</strong>  in inserting the payment ID more than once.</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12 col-xs-12">
+                                            <form name="payment-form" action="#" method="get">
+                                                <div class="bio-row">
+                                                    <label class="col-sm-6 col-xs-6 control-label"><strong>Registration
+                                                            Number</strong> :</label>
+                                                    <label for="registration-no"
+                                                        class="col-sm-6 col-xs-6 control-label">GKB-1256-5658</label>
+                                                </div>
+                                                <div class="bio-row">
+                                                    <label class="col-sm-6 col-xs-6 control-label"><strong>Admission
+                                                            Amount</strong> :</label>
+                                                    <label for="admission-amt"
+                                                        class="col-sm-6 col-xs-6 control-label">&#8377;<span>5400</span></label>
+                                                </div>
+                                                <div class="bio-row">
+                                                    <label class="col-sm-6 col-xs-6 control-label"><strong style="color:orangered;" >Total
+                                                            Amount</strong>
+                                                        :</label>
+                                                    <label for="total-amt"
+                                                        class="col-sm-6 col-xs-6 control-label">&#8377;<span>9200</span></label>
+                                                </div>
+                                                <div class="bio-row">
+
+                                                    <label
+                                                        class="col-sm-6 col-xs-6 control-label"><strong>Email</strong>
+                                                        :</label>
+                                                    <label for="email-id"
+                                                        class="col-sm-6 col-xs-6 control-label">abc@hms.com</label>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg 12 col-xs-12">
+                                            <div class="panel">
+                                                <div class="panel-body">
+                                                    <header class="panel-heading tab-bg-info">
+                                                        <ul class="nav nav-tabs">
+                                                            <li class="active">
+                                                                <a data-toggle="tab" href="#cash-payment">
+                                                                    <i class="icon-envelope"></i>
+                                                                    Cash Payment Entry
+                                                                </a>
+                                                            </li>
+                                                            <!-- <li class="">
+                                                                <a data-toggle="tab" href="#online-transaction">
+                                                                    <i class="icon-envelope"></i>
+                                                                    Online Transaction
+                                                                </a>
+                                                            </li> -->
+                                                        </ul>
+                                                    </header>
+
+                                                    <!-- Online Transaction -->
+                                                    <div class="tab-content">
+
+                                                        <!-- Cash Payment -->
+                                                        <div id="cash-payment" class="tab-pane tab-pane active">
+                                                            <section class="panel">
+                                                                <div class="panel-body">
+                                                                    <div class="row">
+                                                                        <div class="col-lg-12">
+                                                                            <form role="form" class="mg-30"
+                                                                                id="cash-payment-form"
+                                                                                action="admission-students.html"
+                                                                                method="POST">
+                                                                                <div class="form-group">
+                                                                                    <label for="receipt-name"
+                                                                                        class="col-sm-6 control-label"><strong>
+                                                                                            Payee Name</strong>
+                                                                                        :</label>
+                                                                                    <div class="col-sm-6">
+                                                                                        <input type="text"
+                                                                                            name="payee-name"
+                                                                                            class="form-control"
+                                                                                            placeholder="Enter Full Name"
+                                                                                            required>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="form-group">
+                                                                                    <label for="receipt-number"
+                                                                                        class="col-sm-6 control-label"><strong>
+                                                                                            Payee Receipt
+                                                                                            Number</strong> :</label>
+                                                                                    <div class="col-sm-6">
+                                                                                        <input type="number"
+                                                                                            name="payee-receipt-number1"
+                                                                                            class="form-control"
+                                                                                            placeholder="-XXXX-"
+                                                                                            required>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="form-group">
+                                                                                    <label for="expense-type"
+                                                                                        class="col-sm-6 control-label"><strong>
+                                                                                            Expense type</strong>
+                                                                                        :</label>
+                                                                                    <div class="col-sm-6">
+                                                                                        <select id="payment-status"
+                                                                                            class="form-control"
+                                                                                            required>
+                                                                                            <option value="">- Choose-
+                                                                                            </option>
+                                                                                            <option value="1">Transport
+                                                                                            </option>
+                                                                                            <option value="2">Tuition
+                                                                                            </option>
+                                                                                            <option value="3">Library
+                                                                                            </option>
+                                                                                            <option value="4">Annual
+                                                                                                Exam
+                                                                                            </option>
+                                                                                            <option value="5">
+                                                                                                Maintenance
+                                                                                            </option>
+                                                                                            <option value="6">
+                                                                                                Computer Fees
+                                                                                            </option>
+                                                                                            <option value="7">
+                                                                                                All
+                                                                                            </option>
+                                                                                        </select>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="form-group">
+                                                                                    <label for="payee-amount"
+                                                                                        class="col-sm-12 control-label"><strong>
+                                                                                            Final Payment : &#8377;
+                                                                                            <span
+                                                                                                class="payee-amt">9200</span></strong>
+                                                                                        :</label>
+                                                                                </div>
+                                                                                <div class="form-group">
+                                                                                    <div class="col-sm-6">
+                                                                                        <input
+                                                                                            class="btn btn-success btn-lg btn-block"
+                                                                                            type="submit"
+                                                                                            value="Confirm">
+                                                                                    </div>
+                                                                                    <div class="col-sm-6">
+                                                                                        <a href="admission-students.html"
+                                                                                            class="btn btn-danger btn-lg btn-block">Cancel
+                                                                                            Payment</a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </form>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </section>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </section>
+
+
+    <!-- javascripts -->
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui-1.10.4.min.js"></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-1.9.2.custom.min.js"></script>
+    <!-- bootstrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- nice scroll -->
+    <script src="js/jquery.scrollTo.min.js"></script>
+    <script src="js/jquery.nicescroll.js" type="text/javascript"></script>
+    <!-- charts scripts -->
+    <script src="assets/jquery-knob/js/jquery.knob.js"></script>
+    <script src="js/jquery.sparkline.js" type="text/javascript"></script>
+    <script src="js/owl.carousel.js"></script>
+    <!-- jQuery full calendar -->
+    <script src="js/fullcalendar.min.js">
+    </script>
+    <!-- Full Google Calendar - Calendar -->
+    <script src="/path/to/jquery.min.js"></script>
+    <script src="/path/to/moment.min.js"></script>
+
+
+    <script src="assets/fullcalendar/fullcalendar/fullcalendar.js"></script>
+    <!--script for this page only-->
+    <script src="js/calendar-custom.js"></script>
+    <script src="js/jquery.rateit.min.js"></script>
+    <!-- custom select -->
+    <script src="js/jquery.customSelect.min.js"></script>
+    <script src="assets/chart-master/Chart.js"></script>
+
+    <!--custome script for all page-->
+    <script src="js/filter.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/scripts.js"></script>
+    <!-- custom script for this page-->
+    <script src="js/sparkline-chart.js"></script>
+    <script src="js/jquery-jvectormap-1.2.2.min.js"></script>
+    <script src="js/jquery-jvectormap-world-mill-en.js"></script>
+    <script src="js/xcharts.min.js"></script>
+    <script src="js/jquery.autosize.min.js"></script>
+    <script src="js/jquery.placeholder.min.js"></script>
+    <script src="js/gdp-data.js"></script>
+    <script src="js/morris.min.js"></script>
+    <script src="js/sparklines.js"></script>
+    <script src="js/charts.js"></script>
+    <script src="js/jquery.slimscroll.min.js"></script>
+</body>
+
+</html>

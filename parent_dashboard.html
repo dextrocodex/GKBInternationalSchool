@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo.jpg">
+
+    <title>Parent Dashboard- GKB International School</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- bootstrap theme -->
+    <link href="css/bootstrap-theme.css" rel="stylesheet">
+    <!--external css-->
+    <!-- font icon -->
+    <link href="css/elegant-icons-style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- full calendar css-->
+    <link href="assets/fullcalendar/fullcalendar/bootstrap-fullcalendar.css" rel="stylesheet" />
+    <link href="assets/fullcalendar/fullcalendar/fullcalendar.css" rel="stylesheet" />
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="css/fullcalendar.css">
+    <link href="css/widgets.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-responsive.css" rel="stylesheet" />
+    <link href="css/jquery-ui-1.10.4.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- container section start -->
+    <section id="container" class="main-content">
+        <header class="header dark-bg">
+            <div class="toggle-nav">
+                <div class="icon-reorder tooltips" data-original-title="Toggle Navigation" data-placement="bottom"><i
+                        class="icon_menu"></i></div>
+            </div>
+            <!--logo start-->
+            <a href="index.html" class="logo">GKB <span class="lite">International School</span></a>
+            <!--logo end-->
+
+            <div class="top-nav notification-row">
+                <!-- notificatoin dropdown start-->
+                <ul class="nav pull-right top-menu">
+
+                    <!-- task notificatoin start -->
+
+                    <li class="dropdown">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <span class="profile-ava">
+                                <i class="fa fa-user"></i>
+                            </span>
+                            <span class="username">Parent</span>
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu extended logout">
+                            <div class="log-arrow-up"></div>
+                            <li class="eborder-top">
+                                <a href="p-student-registration.html"><i class="far fa-clipboard"></i>Register for New
+                                    Student</a>
+                            </li>
+                            <li>
+                                <a href="parent_login.html"><i class="icon_key_alt"></i> Log Out</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- user login dropdown end -->
+                </ul>
+                <!-- notificatoin dropdown end-->
+            </div>
+        </header>
+        <!--header end-->
+
+        <!--sidebar start-->
+        <aside>
+            <div id="sidebar" class="nav-collapse ">
+                <!-- sidebar menu start-->
+                <ul class="sidebar-menu">
+                    <li class="active">
+                        <a class="" href="index.html">
+                            <i class="icon_house_alt"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="sub-menu">
+                        <a class="" href="javascript:;">
+                            <i class="icon_document_alt"></i>
+                            <span>Student Profile</span>
+                            <span class="menu-arrow arrow_carrot-right"></span>
+                        </a>
+                        <ul class="sub">
+                            <li><a class="" href="p-student-profile.html">Basic Information</a></li>
+                            <li><a class="" href="p-exam_records">Exam Records</a></li>
+                            <li><a class="" href="p-admitCard.html">Print Admit Card</a></li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="p-fee_records.html" class="">
+                            <i class="far fa-credit-card"></i>
+                            <span>Fee Records</span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="p-notification.html" class="">
+                            <i class="far fa-bell"></i>
+                            <span>General Notifications</span>
+                        </a>
+                    </li>
+                </ul>
+                <!-- sidebar menu end-->
+            </div>
+        </aside>
+        <!--sidebar end-->
+
+        <!--main content start-->
+        <section id="main-content">
+            <section class="wrapper">
+                <!--overview start-->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h3 class="page-header"><i class="fas fa-user-tie b-icon"></i>Parent Dashboard</h3>
+                        <ol class="breadcrumb">
+                            <li><i class="fa fa-home"></i><a href="index.html">Home</a></li>
+                            <li><i class="fas fa-user-tie b-icon"></i></i>Parent Dashboard</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                        <div class="info-box blue-bg">
+                            <i class="fas fa-rupee-sign"></i>
+                            <div class="count">5238</div>
+                            <div class="title">Due Fees</div>
+                        </div>
+                        <!--/.info-box-->
+                    </div>
+                    <!--/.col-->
+
+                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                        <div class="info-box orange-bg">
+                            <i class="fas fa-poll-h"></i>
+                            <div class="count">5</div>
+                            <div class="title">Notifications</div>
+                        </div>
+                        <!--/.info-box-->
+                    </div>
+                    <!--/.col-->
+
+                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                        <div class="info-box green-bg">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div class="count">12</div>
+                            <div class="title">Result</div>
+                        </div>
+                        <!--/.info-box-->
+                    </div>
+                    <!--/.col-->
+
+                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                        <div class="info-box red-bg">
+                            <i class="fas fa-rupee-sign"></i>
+                            <div class="count">16505</div>
+                            <div class="title">Expenses/Year</div>
+                        </div>
+                        <!--/.info-box-->
+                    </div>
+                    <!--/.col-->
+                </div>
+                <!--/.row-->
+
+
+                <div class="row">
+                    <!-- Kid-basic-info -->
+                    <div class="col-lg-6 col-md-6 col-sm-4">
+                        <section class="panel" id="parent-kids">
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="panel-heading">
+                                            <div class="heading-layout1">
+                                                <div class="item-title">
+                                                    <p><strong>My Kids</strong></p>
+                                                </div>
+                                                <div>
+                                                    <a class="btn btn-primary" href="p-student-registration.html"><i
+                                                            class="fas fa-user-plus"></i> </b> Add New Student</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="panel-body total-fee-table">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="kid-detail-box">
+                                                <div class="item-img">
+                                                    <img src="img/avatar1.jpg" alt="kids">
+                                                </div>
+                                                <div class="item-content">
+                                                    <table class="table">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>Name:</td>
+                                                                <td>John Doe</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Gender:</td>
+                                                                <td>Male</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Class:</td>
+                                                                <td>2</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Reg. Number:</td>
+                                                                <td>GKB-1025-5625</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Section:</td>
+                                                                <td>A</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Admission Id:</td>
+                                                                <td>1256-0021</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Admission Date:</td>
+                                                                <td>07-08-2017</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <div class="dropdown">
+                                                    <a class="dropdown-toggle" href="#" role="button"
+                                                        data-toggle="dropdown" aria-expanded="false">...</a>
+
+                                                    <div class="dropdown-menu dropdown-menu-right" style="position: absolute;
+                                                                    transform: translate3d(-92px, 51px, 0px);
+                                                                    top: -25px;
+                                                                    left: 50px;
+                                                                    /* will-change: transform; */
+                                                                    min-width: 115px;">
+                                                        <a href="#" class="fee-add">Close</a>
+                                                        <a href="p-student-profile.html" class="fee-add">View</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="kid-detail-box">
+                                                <div class="item-img">
+                                                    <img src="img/avatar1.jpg" alt="kids">
+                                                </div>
+                                                <div class="item-content">
+                                                    <table class="table">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>Name:</td>
+                                                                <td>John Doe</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Gender:</td>
+                                                                <td>Male</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Class:</td>
+                                                                <td>2</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Reg. Number:</td>
+                                                                <td>GKB-1025-5625</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Section:</td>
+                                                                <td>A</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Admission Id:</td>
+                                                                <td>1256-0021</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Admission Date:</td>
+                                                                <td>07-08-2017</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <div class="dropdown">
+                                                    <a class="dropdown-toggle" href="#" role="button"
+                                                        data-toggle="dropdown" aria-expanded="false">...</a>
+
+                                                    <div class="dropdown-menu dropdown-menu-right" style="position: absolute;
+                                                                        transform: translate3d(-92px, 51px, 0px);
+                                                                        top: -25px;
+                                                                        left: 50px;
+                                                                        /* will-change: transform; */
+                                                                        min-width: 115px;">
+                                                        <a href="#" class="fee-add">Close</a>
+                                                        <a href="p-student-profile.html" class="fee-add">View</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </section>
+                    </div>
+                    <!-- Kid-info-end -->
+
+                    <!-- Expenses start -->
+                    <div class="col-lg-6 col-md-6 col-sm-8">
+                        <div class="panel">
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="panel-heading">
+                                            <div class="item-title">
+                                                <p><strong>Notice Board</strong></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="notice-box-wrap">
+                                    <div class="notice-list">
+                                        <div class="badge badge-pending">16 June, 2019</div>
+                                        <h6 class="notice-title"><a href="#">Great School manag mene esom tus eleifend
+                                                lectus
+                                                sed maximus mi faucibusnting.</a></h6>
+                                        <div class="entry-meta"> Jennyfar Lopez / <span>5 min ago</span></div>
+                                    </div>
+                                    <div class="notice-list">
+                                        <div class="badge badge-pending">16 June, 2019</div>
+                                        <h6 class="notice-title"><a href="#">Great School manag mene esom tus eleifend
+                                                lectus
+                                                sed maximus mi faucibusnting.</a></h6>
+                                        <div class="entry-meta"> Jennyfar Lopez / <span>5 min ago</span></div>
+                                    </div>
+                                    <div class="notice-list">
+                                        <div class="badge badge-pending">16 June, 2019</div>
+                                        <h6 class="notice-title"><a href="#">Great School manag mene esom tus eleifend
+                                                lectus
+                                                sed maximus mi faucibusnting.</a></h6>
+                                        <div class="entry-meta"> Jennyfar Lopez / <span>5 min ago</span></div>
+                                    </div>
+                                    <div class="notice-list">
+                                        <div class="badge badge-pending">16 June, 2019</div>
+                                        <h6 class="notice-title"><a href="#">Great School manag mene esom tus eleifend
+                                                lectus
+                                                sed maximus mi faucibusnting.</a></h6>
+                                        <div class="entry-meta"> Jennyfar Lopez / <span>5 min ago</span></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <!-- Notification-start -->
+                    <div class="col-lg-6 col-sm-6">
+
+
+                        <section class="panel  maxh-560">
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="panel-heading">
+                                                <div class="item-title">
+                                                    <p><strong>Fee Expenses</strong></p>
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <header class="panel-heading tab-bg-info">
+                                            <div class="filter-container text-left">
+                                                <i class="icon-envelope"></i>
+                                                <button class="btn-t active"
+                                                    onclick="filterSelection('all-fee')">All</button>
+                                                <i class="icon-envelope"></i>
+                                                <button class="btn-t" onclick="filterSelection('pending-fee')">Pending
+                                                    Fee</button>
+                                                <i class="icon-envelope"></i>
+                                                <button class="btn-t" onclick="filterSelection('paid-fee')">Paid
+                                                    Fee</button>
+                                            </div>
+                                        </header>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <section class="panel">
+                                            <div class="panel-body expenses-table-box">
+                                                <table class="table data-table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="sorting" tabindex="0" rowspan="1" colspan="1"
+                                                                style="width: 95px;">Registration
+                                                                ID</th>
+                                                            <th class="sorting" tabindex="0" rowspan="1" colspan="1"
+                                                                style="width: 50px;">Expense Type</th>
+                                                            <th class="sorting" tabindex="0" rowspan="1" colspan="1"
+                                                                style="width: 50px;">Expense Month/Year</th>
+                                                            <th class="sorting" tabindex="0" rowspan="1" colspan="1"
+                                                                style="width: 50px;">Amount</th>
+                                                            <th class="sorting" tabindex="0" rowspan="1" colspan="1"
+                                                                style="width: 100px;">Status</th>
+                                                            <th class="sorting" tabindex="0" rowspan="1" colspan="1"
+                                                                style="width: 50px;">Due Date</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody class="expense-body">
+                                                        <tr class="column pending-fee">
+                                                            <td>GKB-1205-5256</td>
+                                                            <td>Transport</td>
+                                                            <td>May 2019</td>
+                                                            <td>&#8377;<span>5200</span></td>
+                                                            <td class="badge d-block badge-pending">Pending</td>
+                                                            <td class="perform-date">24-05-19</td>
+                                                            <!-- <td>
+                                                                        <div class="p-payment">
+                                                                            <a class="btn btn-default"
+                                                                                href="payment_portal.html"><i
+                                                                                    class="fas fa-money-check-alt"></i> &nbsp;
+                                                                                Make
+                                                                                Payment</a>
+                                                                        </div>
+                                                                    </td> -->
+                                                        </tr>
+                                                        <tr class="column paid-fee">
+                                                            <td>GKB-1205-5256</td>
+                                                            <td>Transport</td>
+                                                            <td>April 2019</td>
+                                                            <td>&#8377;<span>5200</span></td>
+                                                            <td class="badge d-block badge-paid">Paid</td>
+                                                            <td class="perform-date">24-05-19</td>
+                                                        </tr>
+                                                        <tr class="column pending-fee">
+                                                            <td>GKB-1205-5256</td>
+                                                            <td>Transport</td>
+                                                            <td>May 2019</td>
+                                                            <td>&#8377;<span>5200</span></td>
+                                                            <td class="badge d-block badge-pending">Pending</td>
+                                                            <td class="perform-date">24-05-19</td>
+                                                        </tr>
+                                                        <tr class="column paid-fee">
+                                                            <td>GKB-1205-5256</td>
+                                                            <td>Faculty</td>
+                                                            <td>May 2019</td>
+                                                            <td>&#8377;<span>5200</span></td>
+                                                            <td class="badge d-block badge-paid">Paid</td>
+                                                            <td class="perform-date">24-05-19</td>
+                                                        </tr>
+                                                        <tr class="column pending-fee">
+                                                            <td>GKB-1205-5256</td>
+                                                            <td>Transport</td>
+                                                            <td>June 2019</td>
+                                                            <td>&#8377;<span>5200</span></td>
+                                                            <td class="badge d-block badge-pending">Pending</td>
+                                                            <td class="perform-date">24-05-19</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <!-- Notification End -->
+
+                    <!-- Exam Records Start -->
+                    <div class="col-lg-6 col-sm-6">
+                        <div class="panel">
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="panel-heading">
+                                            <div class="heading-layout1">
+                                                <div class="item-title">
+                                                    <p><strong>Exam Records</strong></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <section class="panel">
+                                            <div class="panel-body expenses-table-box">
+                                                <table class="table data-table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="sorting" tabindex="0" rowspan="1" colspan="1"
+                                                                style="width: 85px;">Registration
+                                                                ID</th>
+                                                            <th class="sorting" tabindex="0" rowspan="1" colspan="1"
+                                                                style="width: 90px;">Exam Name</th>
+                                                            <th class="sorting" tabindex="0" rowspan="1" colspan="1"
+                                                                style="width: 80px;">Subject</th>
+                                                            <th class="sorting" tabindex="0" rowspan="1" colspan="1"
+                                                                style="width: 25px;">Class</th>
+                                                            <th class="sorting" tabindex="0" rowspan="1" colspan="1"
+                                                                style="width: 25px;">Roll No.</th>
+                                                            <th class="sorting" tabindex="0" rowspan="1" colspan="1"
+                                                                style="width: 50px;">Grade</th>
+                                                            <th class="sorting" tabindex="0" rowspan="1" colspan="1"
+                                                                style="width: 50px;">Percent</th>
+                                                            <th class="sorting" tabindex="0" rowspan="1" colspan="1"
+                                                                style="width: 50px;">Date</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody class="result-body">
+                                                        <tr class="result-row">
+                                                            <td>#2023</td>
+                                                            <td>Class Test</td>
+                                                            <td>Science</td>
+                                                            <td class="badge badge-pending">IX</td>
+                                                            <td>#0026</td>
+                                                            <td>B</td>
+                                                            <td>92.0</td>
+                                                            <td class="perform-date">25-05-2019</td>
+                                                        </tr>
+                                                        <tr class="result-row">
+                                                            <td>#2023</td>
+                                                            <td>Class Test</td>
+                                                            <td>Science</td>
+                                                            <td class="badge badge-pending">IX</td>
+                                                            <td>#0026</td>
+                                                            <td>B</td>
+                                                            <td>92.0</td>
+                                                            <td class="perform-date">25-05-2019</td>
+                                                        </tr>
+                                                        <tr class="result-row">
+                                                            <td>#2023</td>
+                                                            <td>Class Test</td>
+                                                            <td>Science</td>
+                                                            <td class="badge badge-pending">IX</td>
+                                                            <td>#0026</td>
+                                                            <td>B</td>
+                                                            <td>92.0</td>
+                                                            <td class="perform-date">25-05-2019</td>
+                                                        </tr>
+                                                        <tr class="result-row">
+                                                            <td>#2023</td>
+                                                            <td>Class Test</td>
+                                                            <td>Science</td>
+                                                            <td class="badge badge-pending">IX</td>
+                                                            <td>#0026</td>
+                                                            <td>B</td>
+                                                            <td>92.0</td>
+                                                            <td class="perform-date">25-05-2019</td>
+                                                        </tr>
+                                                        <tr class="result-row">
+                                                            <td>#2023</td>
+                                                            <td>Class Test</td>
+                                                            <td>Science</td>
+                                                            <td class="badge badge-pending">IX</td>
+                                                            <td>#0026</td>
+                                                            <td>B</td>
+                                                            <td>92.0</td>
+                                                            <td class="perform-date">25-05-2019</td>
+                                                        </tr>
+                                                        <tr class="result-row">
+                                                            <td>#2023</td>
+                                                            <td>Class Test</td>
+                                                            <td>Science</td>
+                                                            <td class="badge badge-pending">IX</td>
+                                                            <td>#0026</td>
+                                                            <td>B</td>
+                                                            <td>92.0</td>
+                                                            <td class="perform-date">25-05-2019</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </section>
+        </section>
+    </section>
+
+
+
+    <!-- javascripts -->
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui-1.10.4.min.js"></script>
+
+    <!-- bootstrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- nice scroll -->
+    <script src="js/jquery.scrollTo.min.js"></script>
+    <script src="js/jquery.nicescroll.js" type="text/javascript"></script>
+
+    <!--script for this page only-->
+    <script src="js/calendar-custom.js"></script>
+    <script src="js/jquery.rateit.min.js"></script>
+    <!-- custom select -->
+    <!--custome script for all page-->
+    <script src="js/filter.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/scripts.js"></script>
+    <!-- custom script for this page-->
+    <script src="js/jquery.autosize.min.js"></script>
+    <script src="js/jquery.placeholder.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo.jpg">
+
+    <title>Student Profile - GKB International School</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- bootstrap theme -->
+    <link href="css/bootstrap-theme.css" rel="stylesheet">
+    <!--external css-->
+    <!-- font icon -->
+    <link href="css/elegant-icons-style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- full calendar css-->
+    <link href="assets/fullcalendar/fullcalendar/bootstrap-fullcalendar.css" rel="stylesheet" />
+    <link href="assets/fullcalendar/fullcalendar/fullcalendar.css" rel="stylesheet" />
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="css/fullcalendar.css">
+    <link href="css/widgets.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-responsive.css" rel="stylesheet" />
+    <link href="css/jquery-ui-1.10.4.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- container section start -->
+    <section id="container" class="main-content">
+        <header class="header dark-bg">
+            <div class="toggle-nav">
+                <div class="icon-reorder tooltips" data-original-title="Toggle Navigation" data-placement="bottom"><i
+                        class="icon_menu"></i></div>
+            </div>
+
+            <!--logo start-->
+            <a href="index.html" class="logo">GKB <span class="lite">International School</span></a>
+            <!--logo end-->
+
+            <div class="nav search-row" id="top_menu">
+                <!--  search form start -->
+                <ul class="nav top-menu">
+                    <li>
+                        <form class="navbar-form">
+                            <input class="form-control" placeholder="Search" type="text">
+                        </form>
+                    </li>
+                </ul>
+                <!--  search form end -->
+            </div>
+
+            <div class="top-nav notification-row">
+                <!-- notificatoin dropdown start-->
+                <ul class="nav pull-right top-menu">
+
+                    <!-- task notificatoin start -->
+
+                    <li class="dropdown">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <span class="profile-ava">
+                                <i class="fa fa-user"></i>
+                            </span>
+                            <span class="username">Admin</span>
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu extended logout">
+                            <div class="log-arrow-up"></div>
+                            <li class="eborder-top">
+                                <a href="index.html"><i class="icon_house_alt"></i>Dashboard</a>
+                            </li>
+                            <li>
+                                <a href="profile.html"><i class="icon_profile"></i> My Profile</a>
+                            </li>
+                            <li>
+                                <a href="student_registration.html"><i class="icon_contacts_alt"></i>Admission</a>
+                            </li>
+                            <li>
+                                <a href="fee_record.html"><i class="icon_creditcard"></i>Fee Records</a>
+                            </li>
+                            <li>
+                                <a href="examination.html"><i class="icon_archive_alt"></i>Examination Records</a>
+                            </li>
+                            <li>
+                                <a href="admin_login.html"><i class="icon_key_alt"></i> Log Out</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- user login dropdown end -->
+                </ul>
+                <!-- notificatoin dropdown end-->
+            </div>
+        </header>
+        <!--header end-->
+
+        <!--sidebar start-->
+        <aside>
+            <div id="sidebar" class="nav-collapse ">
+                <!-- sidebar menu start-->
+                <ul class="sidebar-menu">
+                    <li class="active">
+                        <a class="" href="index.html">
+                            <i class="icon_house_alt"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="sub-menu">
+                        <a href="admission-students.html" class="">
+                            <i class="fas fa-user-plus"></i>
+                            <span>Admission</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="" href="student_list.html">
+                            <i class="icon_document_alt"></i>
+                            <span>Student List</span>
+                        </a>
+                    </li>
+                    <li class="sub-menu">
+                        <a href="javascript:;" class="">
+                            <i class="far fa-credit-card"></i>
+                            <span>Fee Records</span>
+                            <span class="menu-arrow arrow_carrot-right"></span>
+                        </a>
+                        <ul class="sub">
+                            <li><a class="" href="fee_record.html">Add / View Expenses</a></li>
+                            <li><a class="" href="edit_fees.html">Edit Class Expenses</a></li>
+                            <li><a class="" href="all_expense.html">Expense Collection</a></li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="examination.html" class="">
+                            <i class="icon_contacts_alt"></i>
+                            <span>Examination Records</span>
+                        </a>
+                    </li>
+                </ul>
+                <!-- sidebar menu end-->
+            </div>
+        </aside>
+        <!--sidebar end-->
+
+        <!--main content start-->
+        <section id="main-content">
+            <section class="wrapper">
+                <!--overview start-->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h3 class="page-header"><i class="fab fa-creative-commons-by b-icon"></i>Student Profile</h3>
+                        <ol class="breadcrumb">
+                            <li><i class="fa fa-home"></i><a href="index.html">Home</a></li>
+                            <li><i class="fab fa-creative-commons-by b-icon"></i>Student List</li>
+                            <li>Student Profile</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="col-lg-12">
+                    <div class="panel-body">
+                        <section class="panel panel-student">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <ol class="breadcrumb">
+                                        <label><i class="far fa-user"></i> &nbsp;<strong>Student </strong>&nbsp;
+                                            :</label>
+                                        <li><label>1234-5678</label></li>
+                                        <li><label>John Doe</label></li>
+                                        <li><label>Class X</label></li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <header class="panel-heading tab-bg-info">
+                                <ul class="nav nav-tabs">
+                                    <li class="active">
+                                        <a data-toggle="tab" href="#basic-information">
+                                            <i class="icon-user"></i>
+                                            Basic Information
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a data-toggle="tab" href="#supported-document">
+                                            <i class="icon-envelope"></i>
+                                            Supported Documents
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a data-toggle="tab" href="#fee-record">
+                                            <i class="icon-envelope"></i>
+                                            Fee Records
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a data-toggle="tab" href="#yearly-records">
+                                            <i class="icon-envelope"></i>
+                                            Examination Records
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a data-toggle="tab" href="#admit-card">
+                                            <i class="icon-envelope"></i>
+                                            Print Admit Card
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a data-toggle="tab" href="#pass-certificate">
+                                            <i class="icon-envelope"></i>
+                                            Print Pass Certificate
+                                        </a>
+                                    </li>
+                                </ul>
+                            </header>
+                            <!-- basic-information -->
+                            <div class="tab-content">
+                                <div id="basic-information" class="tab-pane tab-pane active">
+                                    <section class="panel">
+                                        <div class="bio-graph-heading">
+                                            <div class="student-photo">
+                                                <img src="img/avatar1.jpg" alt="student-photo">
+                                            </div>
+                                        </div>
+                                        <div class="panel-body bio-graph-info">
+                                            <div class="row">
+                                                <div class="bio-row">
+                                                    <div class="col-sm-6">
+                                                        <span><strong> Name : </strong></span>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <span> John Doe</span>
+                                                    </div>
+                                                </div>
+                                                <div class="bio-row">
+                                                    <div class="col-sm-6">
+                                                        <span><strong> Parent's Name : </strong></span>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <span> John Doe</span>
+                                                    </div>
+                                                </div>
+                                                <div class="bio-row">
+                                                    <div class="col-sm-6">
+                                                        <span><strong>Year of Joining and joining class :
+                                                            </strong></span>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <span> Class X in the year 2014 </span>
+                                                    </div>
+                                                </div>
+                                                <div class="bio-row">
+                                                    <div class="col-sm-6">
+                                                        <span><strong>Gender : </strong></span>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <span> Male </span>
+                                                    </div>
+                                                </div>
+                                                <div class="bio-row">
+                                                    <div class="col-sm-6">
+                                                        <span><strong>Date of Birth : </strong></span>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <span> 27 October 1994 </span>
+                                                    </div>
+                                                </div>
+                                                <div class="bio-row">
+                                                    <div class="col-sm-6">
+                                                        <span><strong>Permanent Address : </strong></span>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <span> H no X, ABC Lane, Guwahati,
+                                                            Assam, India - 781038 </span>
+                                                    </div>
+                                                </div>
+                                                <div class="bio-row">
+                                                    <div class="col-sm-6">
+                                                        <span><strong>Email : </strong></span>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <span> johndoe@mailname.com </span>
+                                                    </div>
+                                                </div>
+                                                <div class="bio-row">
+                                                    <div class="col-sm-6">
+                                                        <span><strong>Contact No : </strong></span>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <span> (+91) 98640 xxxxx </span>
+                                                    </div>
+                                                </div>
+                                                <div class="bio-row">
+                                                    <div class="col-sm-6">
+                                                        <span><strong>Medical Related Information : </strong></span>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <span> No </span>
+                                                    </div>
+                                                </div>
+                                                <div class="bio-row">
+                                                    <div class="col-sm-6">
+                                                        <span><strong>Require Bus Transport? : </strong></span>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <span> Yes </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+                                <!-- supported documents -->
+                                <div id="supported-document" class="tab-pane">
+                                    <section class="panel">
+                                        <div class="panel-body bio-graph-info">
+                                            <div class="row">
+                                                <div class="bio-row">
+                                                    <div class="col-sm-6">
+                                                        <span><strong>Residential Address proof : </strong></span>
+                                                        <span>Driving Licence</span>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <div class="student-attachment">
+                                                            <a href="img/attachments/indiaDrivingLicense.jpg"
+                                                                download="Residential_proof"><img
+                                                                    src="img/attachments/indiaDrivingLicense.jpg"
+                                                                    alt="Residential_proof"></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="bio-row">
+                                                    <div class="col-sm-6">
+                                                        <span><strong>Proof of Birth Certificate : </strong></span>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <div class="student-attachment">
+                                                            <a href="img/attachments/Birth_Certificate commerce.jpg"
+                                                                download="Residential_proof"><img
+                                                                    src="img/attachments/Birth_Certificate commerce.jpg"
+                                                                    alt="Residential_proof"></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="bio-row">
+                                                    <div class="col-sm-6">
+                                                        <span><strong>Student Identification Photo : </strong></span>
+                                                        <span>John Doe</span>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <div class="student-attachment">
+                                                            <a href="img/avatar1.jpg"
+                                                                download="Identification_proof"><img
+                                                                    src="img/avatar1.jpg"
+                                                                    alt="Identification_proof"></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="bio-row">
+                                                    <div class="col-sm-6">
+                                                        <span><strong>Parent's/ Guardian’s recent
+                                                                passport size photo : </strong></span>
+                                                        <span>Albert Doe</span>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <div class="student-attachment">
+                                                            <a href="img/attachments/parent.jpg"
+                                                                download="Identification_proof_2"><img
+                                                                    src="img/attachments/parent.jpg"
+                                                                    alt="Identification_proof"></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="bio-row">
+                                                    <div class="col-sm-6">
+                                                        <span><strong>Medical Certificate and
+                                                                Immunization Certificate : </strong></span>
+                                                        <span>Medical Form</span>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <div class="student-attachment">
+                                                            <a href="img/attachments/Medical-Certificate-Template.jpg"
+                                                                download="Medical_proof"><img
+                                                                    src="img/attachments/Medical-Certificate-Template.jpg"
+                                                                    alt="Medical_proof"></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+
+                                <!-- Fee Record -->
+                                <div id="fee-record" class="tab-pane">
+                                    <section class="panel">
+                                        <div class="panel-body expenses-table-box">
+                                            <table class="table data-table">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="sorting" tabindex="0" rowspan="1" colspan="1"
+                                                            style="width: 95px;">Registration
+                                                            ID</th>
+                                                        <th class="sorting" tabindex="0" rowspan="1" colspan="1"
+                                                            style="width: 45px;">Expense Type</th>
+                                                        <th class="sorting" tabindex="0" rowspan="1" colspan="1"
+                                                            style="width: 57.2px;">Amount</th>
+                                                        <th class="sorting" tabindex="0" rowspan="1" colspan="1"
+                                                            style="width: 46.8px;">Payment Status</th>
+                                                        <th class="sorting" tabindex="0" rowspan="1" colspan="1"
+                                                            style="width: 50px;">E-Mail</th>
+                                                        <th class="sorting" tabindex="0" rowspan="1" colspan="1"
+                                                            style="width: 50px;">Due Date</th>
+                                                        <th class="sorting" tabindex="0" rowspan="1" colspan="1"
+                                                            style="width: 50px;">
+                                                            <div class="dropdown">
+                                                                <a class="dropdown-toggle" href="#" role="button"
+                                                                    data-toggle="dropdown" aria-expanded="false">...</a>
+                                                                <div class="dropdown-menu dropdown-menu-right"
+                                                                    style="width:40px;">
+                                                                    <a class="fee-add" href="#">Close</a>
+                                                                    <a class="fee-add" href="fee_record.html">Add Fee</a>
+                                                                </div>
+                                                            </div>
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody class="expense-body">
+                                                    <tr class="pending-fee">
+                                                        <td>GKB-1256-5862</td>
+                                                        <td>Tuition</td>
+                                                        <td>&#8377;<span>5200</span></td>
+                                                        <td class="badge d-block badge-danger">Due</td>
+                                                        <td>johndoe@gmail.com</td>
+                                                        <td class="perform-date">24-05-19</td>
+                                                    </tr>
+                                                    <tr class="paid-fee">
+                                                        <td>GKB-1256-5862</td>
+                                                        <td>Transport</td>
+                                                        <td>&#8377;<span>5200</span></td>
+                                                        <td class="badge d-block badge-paid">Paid</td>
+                                                        <td>johndoe@gmail.com</td>
+                                                        <td class="perform-date">24-05-19</td>
+                                                    </tr>
+                                                    <tr class="pending-fee">
+                                                        <td>GKB-1256-5862</td>
+                                                        <td>Maintenance</td>
+                                                        <td>&#8377;<span>5200</span></td>
+                                                        <td class="badge d-block badge-danger">Due</td>
+                                                        <td>johndoe@gmail.com</td>
+                                                        <td class="perform-date">24-05-19</td>
+                                                    </tr>
+                                                    <tr class="paid-fee">
+                                                        <td>GKB-1256-5862</td>
+                                                        <td>Transport</td>
+                                                        <td>&#8377;<span>5200</span></td>
+                                                        <td class="badge d-block badge-paid">Paid</td>
+                                                        <td>johndoe@gmail.com</td>
+                                                        <td class="perform-date">24-05-19</td>
+                                                    </tr>
+                                                    <tr class="pending-fee">
+                                                        <td>GKB-1256-5862</td>
+                                                        <td>Transport</td>
+                                                        <td>&#8377;<span>5200</span></td>
+                                                        <td class="badge d-block badge-danger">Due</td>
+                                                        <td>johndoe@gmail.com</td>
+                                                        <td class="perform-date">24-05-19</td>iv>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="paid-fee">
+                                                        <td>GKB-1256-5862</td>
+                                                        <td>Tuition</td>
+                                                        <td>&#8377;<span>5200</span></td>
+                                                        <td class="badge d-block badge-paid">Paid</td>
+                                                        <td>johndoe@gmail.com</td>
+                                                        <td class="perform-date">24-05-19</td>
+                                                    </tr>
+                                                    <tr class="column pending-fee">
+                                                        <td>GKB-1256-5862</td>
+                                                        <td>Tuition</td>
+                                                        <td>&#8377;<span>5200</span></td>
+                                                        <td class="badge d-block badge-danger">Due</td>
+                                                        <td>johndoe@gmail.com</td>
+                                                        <td class="perform-date">24-05-19</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </section>
+                                </div>
+
+                                <!-- Yearly Record -->
+                                <div id="yearly-records" class="tab-pane">
+                                    <section class="panel">
+                                        <div class="row mg-top-30">
+                                            <div class="col-lg-12 col-md-12">
+                                                <div class="col-sm-2">
+                                                    <input type="text" class="search-input form-control" id="inputExam"
+                                                        placeholder="Search by Exam Name">
+                                                </div>
+                                                <div class="col-sm-3">
+                                                    <input class="search-input form-control" id="inputSubject"
+                                                        placeholder="Search by Subject">
+                                                </div>
+                                                <div class="col-sm-1"><button id="ExamSearch"
+                                                        class="btn btn-primary">Search</button>
+                                                </div>
+                                                <div class="col-sm-1"><button id="buttonReset" onclick="performReset3()"
+                                                        class="btn btn-danger">Reset</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel-body expenses-table-box">
+                                            <table class="table data-table">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="sorting" tabindex="0" rowspan="1" colspan="1"
+                                                            style="width: 85px;">Registration
+                                                            ID</th>
+                                                        <th class="sorting" tabindex="0" rowspan="1" colspan="1"
+                                                            style="width: 90px;">Exam Name</th>
+                                                        <th class="sorting" tabindex="0" rowspan="1" colspan="1"
+                                                            style="width: 80px;">Subject</th>
+                                                        <th class="sorting" tabindex="0" rowspan="1" colspan="1"
+                                                            style="width: 25px;">Class</th>
+                                                        <th class="sorting" tabindex="0" rowspan="1" colspan="1"
+                                                            style="width: 25px;">Roll No.</th>
+                                                        <th class="sorting" tabindex="0" rowspan="1" colspan="1"
+                                                            style="width: 50px;">Grade</th>
+                                                        <th class="sorting" tabindex="0" rowspan="1" colspan="1"
+                                                            style="width: 50px;">Percent</th>
+                                                        <th class="sorting" tabindex="0" rowspan="1" colspan="1"
+                                                            style="width: 50px;">Date</th>
+                                                        <th class="sorting" tabindex="0" rowspan="1" colspan="1"
+                                                            style="width: 30px;">
+                                                            <div class="dropdown">
+                                                                <a class="dropdown-toggle" href="#" role="button"
+                                                                    data-toggle="dropdown" aria-expanded="false">...</a>
+                                                                <div class="dropdown-menu dropdown-menu-right"
+                                                                    style="width:40px;">
+                                                                    <a class="dropdown-item" href="#">Close</a>
+                                                                    <a class="dropdown-item" href="examination.html">Add</a>
+                                                                </div>
+                                                            </div>
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody class="result-body">
+                                                    <tr class="result-row">
+                                                        <td>GKB-1234-2134</td>
+                                                        <td>Class Test</td>
+                                                        <td>Science</td>
+                                                        <td class="badge d-block badge-pending">IX</td>
+                                                        <td>#0026</td>
+                                                        <td>B</td>
+                                                        <td>92.0</td>
+                                                        <td class="perform-date">25-05-2019</td>
+                                                    </tr>
+                                                    <tr class="result-row">
+                                                        <td>GKB-1234-2134</td>
+                                                        <td>Class Test</td>
+                                                        <td>Science</td>
+                                                        <td class="badge d-block badge-pending">IX</td>
+                                                        <td>#0026</td>
+                                                        <td>B</td>
+                                                        <td>92.0</td>
+                                                        <td class="perform-date">25-05-2019</td>
+                                                    </tr>
+                                                    <tr class="result-row">
+                                                        <td>GKB-1234-2134</td>
+                                                        <td>Class Test</td>
+                                                        <td>Science</td>
+                                                        <td class="badge d-block badge-pending">IX</td>
+                                                        <td>#0026</td>
+                                                        <td>B</td>
+                                                        <td>92.0</td>
+                                                        <td class="perform-date">25-05-2019</td>
+                                                    </tr>
+                                                    <tr class="result-row">
+                                                        <td>GKB-1234-2134</td>
+                                                        <td>Class Test</td>
+                                                        <td>Science</td>
+                                                        <td class="badge d-block badge-pending">IX</td>
+                                                        <td>#0026</td>
+                                                        <td>B</td>
+                                                        <td>92.0</td>
+                                                        <td class="perform-date">25-05-2019</td>
+                                                    </tr>
+                                                    <tr class="result-row">
+                                                        <td>GKB-1234-2134</td>
+                                                        <td>Class Test</td>
+                                                        <td>Science</td>
+                                                        <td class="badge d-block badge-pending">IX</td>
+                                                        <td>#0026</td>
+                                                        <td>B</td>
+                                                        <td>92.0</td>
+                                                        <td class="perform-date">25-05-2019</td>
+                                                    </tr>
+                                                    <tr class="result-row">
+                                                        <td>GKB-1234-2134</td>
+                                                        <td>Class Test</td>
+                                                        <td>Science</td>
+                                                        <td class="badge d-block badge-pending">IX</td>
+                                                        <td>#0026</td>
+                                                        <td>B</td>
+                                                        <td>92.0</td>
+                                                        <td class="perform-date">25-05-2019</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </section>
+                                </div>
+
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <!--/.row-->
+
+
+            </section>
+        </section>
+        <!--main content end-->
+    </section>
+    <!-- Modal container section start -->
+
+    <div id="fee-add" class="modal">
+        <span onclick="document.getElementById('fee-add').style.display='none'" class="close" title="Close Modal"><i
+                class="fas fa-times-circle"></i></span>
+        <div class="fee-box modal-content">
+            <form name="new-fee" action="#" method="POST">
+                <div class="form-group">
+                    <label class="col-sm-4 control-label"><strong>Registration Id</strong> : <span id="reg-id">
+                            #2023</span></label>
+                    <label class="col-sm-4 control-label"><strong>Expense Type</strong> : </label>
+                    <div class="col-sm-4">
+                        <select name="expense-type" class="form-control" required>
+                            <option value="">- Please Select-</option>
+                            <option value="1">Transport</option>
+                            <option value="2">Maintenance</option>
+                            <option value="3">Tuition</option>
+                            <option value="4">Facility</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label"><strong>Expense Month</strong> : </label>
+                    <div class="col-sm-3">
+                        <select name="expense-month" id="expense-month" class="form-control" required>
+                            <option value="">- Choose Month-</option>
+                            <option value="1">January</option>
+                            <option value="2">February</option>
+                            <option value="3">March</option>
+                            <option value="4">April</option>
+                            <option value="5">May</option>
+                            <option value="6">June</option>
+                            <option value="7">July</option>
+                            <option value="8">August</option>
+                            <option value="9">September</option>
+                            <option value="10">October</option>
+                            <option value="11">November</option>
+                            <option value="12">December</option>
+                        </select>
+                    </div>
+                    <label class="col-sm-3 control-label"><strong>of the Year</strong> : </label>
+                    <div class="col-sm-3">
+                        <input type="number" maxlength="4" class="form-control" placeholder="yyyy" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-12 control-label"><strong>Amount (Admission fee inclusive if applicable on
+                            first term or
+                            consecutive term of the financial year)</strong>:</label>
+                    <label class="col-sm-3 control-label"><strong>Admission fee</strong>:</label>
+                    <div class="col-sm-3">
+                        <input type="number" maxlength="4" class="form-control" placeholder="&#8377;" required>
+                    </div>
+                    <label class="col-sm-3 control-label"><strong> + &nbsp;&nbsp; Monthly Fee</strong>:</label>
+                    <div class="col-sm-3">
+                        <input type="number" maxlength="4" class="form-control" placeholder="&#8377;" required>
+                    </div>
+                    <label class="col-sm-12 control-label pull-right"><strong>Total Fee</strong>: &#8377;<span
+                            class="Total fee"></span></label>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label"><strong>Due Date</strong>:</label>
+                    <div class="col-sm-3">
+                        <input type="date" class="form-control" placeholder="dd/mm/yyyy" required>
+                    </div>
+                    <label class="col-sm-3 control-label"><strong>Email</strong>:</label>
+                    <div class="col-sm-3">
+                        <input type="email" class="form-control" placeholder="abc@hms.com" required>
+                    </div>
+                </div>
+                <div class="form-group clearfix">
+                    <button type="button" onclick="document.getElementById('fee-add').style.display='none'"
+                        class="cancelbtn btn-danger">Cancel</button>
+                    <button type="submit" class="signupbtn btn-success">Add Fee</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Exam Record Add modal -->
+    <div id="add-exam-record" class="modal">
+        <span onclick="document.getElementById('add-exam-record').style.display='none'" class="close"
+            title="Close Modal"><i class="fas fa-times-circle"></i></span>
+        <div class="fee-box modal-content">
+            <div class="row">
+                <div class="col-lg-12">
+                    <section class="panel">
+                        <div class="panel-body">
+                            <div class="panel-heading heading-layout1">
+                                <strong>Add Student Examination Record</strong>
+                            </div>
+                            <form name="add-exam-record" action="#" method="post">
+                                <div class="form-group">
+                                    <label for="reg-id" class="col-sm-2 control-label"><strong>Registration ID</strong>
+                                        : </label>
+                                    <div class="col-sm-2">
+                                        <input type="number" name="reg-id-num" class="form-control" placeholder="-xxxx-"
+                                            required>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <input type="number" name="reg-id-num" class="form-control" placeholder="-xxxx-"
+                                            required>
+                                    </div>
+                                    <label for="student-name" class="col-sm-3 control-label"><strong>Class</strong>
+                                        : </label>
+                                    <div class="col-sm-3">
+                                        <select class="form-control" required>
+                                            <option value="">-Please Select-</option>
+                                            <option value="1">Nursery</option>
+                                            <option value="2">K.G 1</option>
+                                            <option value="3">K.G 2</option>
+                                            <option value="4">I</option>
+                                            <option value="5">II</option>
+                                            <option value="6">III</option>
+                                            <option value="7">IV</option>
+                                            <option value="8">V</option>
+                                            <option value="9">VI</option>
+                                            <option value="10">VII</option>
+                                            <option value="11">VIII</option>
+                                            <option value="12">IX</option>
+                                            <option value="13">X</option>
+                                            <option value="14">XI</option>
+                                            <option value="15">XII</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="student-name" class="col-sm-2 control-label"><strong>Exam Name</strong>
+                                        : </label>
+                                    <div class="col-sm-4">
+                                        <select id="payment-status" class="form-control" required>
+                                            <option value="">- Choose-</option>
+                                            <option value="1">Class Test 1
+                                            </option>
+                                            <option value="2">Class Test 2
+                                            </option>
+                                            <option value="3">Half Yearly
+                                            </option>
+                                            <option value="4">Annual
+                                            </option>
+                                        </select>
+                                    </div>
+                                    <label for="reg-id" class="col-sm-2 control-label"><strong>Subject</strong>
+                                        : </label>
+                                    <div class="col-sm-4">
+                                        <input type="text" name="subject-name" class="form-control"
+                                            placeholder="Science/ Social Science" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="student-roll-no" class="col-sm-2 control-label"><strong>Roll
+                                            Number</strong>
+                                        : </label>
+                                    <div class="col-sm-2">
+                                        <input type="number" name="student-roll-no" class="form-control"
+                                            placeholder="#0002" required>
+                                    </div>
+                                    <label for="student-grade" class="col-sm-2 control-label"><strong>Grade</strong>
+                                        : </label>
+                                    <div class="col-sm-2">
+                                        <select id="payment-status" class="form-control" required>
+                                            <option value="">- Choose-</option>
+                                            <option value="1">A+
+                                            </option>
+                                            <option value="2">A
+                                            </option>
+                                            <option value="3">B+
+                                            </option>
+                                            <option value="4">B
+                                            </option>
+                                            <option value="5">C
+                                            </option>
+                                            <option value="6">D
+                                            </option>
+                                            <option value="7">E
+                                            </option>
+                                            <option value="8">F
+                                            </option>
+                                        </select>
+                                    </div>
+                                    <label for="student-percent" class="col-sm-2 control-label"><strong>Percent
+                                            (%)</strong>
+                                        : </label>
+                                    <div class="col-sm-2">
+                                        <input type="number" name="student-percent" class="form-control"
+                                            placeholder="96.00%" required>
+                                    </div>
+                                </div>
+                                <div class="form-group clearfix">
+                                    <div class="col-sm-12">
+                                        <div class="col-sm-3">
+                                            <input type="submit" class="btn btn-success" value="Add Record">
+                                        </div>
+
+                                        <div class="col-sm-3">
+                                            <button
+                                                onclick="document.getElementById('add-exam-record').style.display='none'"
+                                                class="btn btn-danger">Close Form</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- javascripts -->
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui-1.10.4.min.js"></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-1.9.2.custom.min.js"></script>
+    <!-- bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- nice scroll -->
+    <script src="js/jquery.scrollTo.min.js"></script>
+    <script src="js/jquery.nicescroll.js" type="text/javascript"></script>
+    <!-- charts scripts -->
+    <script src="assets/jquery-knob/js/jquery.knob.js"></script>
+    <script src="js/jquery.sparkline.js" type="text/javascript"></script>
+    <script src="assets/jquery-easy-pie-chart/jquery.easy-pie-chart.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <!-- jQuery full calendar -->
+    <script src="js/fullcalendar.min.js">
+    </script>
+    <!-- Full Google Calendar - Calendar -->
+    <script src="/path/to/jquery.min.js"></script>
+    <script src="/path/to/moment.min.js"></script>
+
+
+    <script src="assets/fullcalendar/fullcalendar/fullcalendar.js"></script>
+    <!--script for this page only-->
+    <script src="js/calendar-custom.js"></script>
+    <script src="js/jquery.rateit.min.js"></script>
+    <!-- custom select -->
+    <script src="js/jquery.customSelect.min.js"></script>
+    <script src="assets/chart-master/Chart.js"></script>
+
+    <!--custome script for all page-->
+    <script src="js/scripts.js"></script>
+    <!-- custom script for this page-->
+    <script src="js/sparkline-chart.js"></script>
+    <script src="js/jquery-jvectormap-1.2.2.min.js"></script>
+    <script src="js/jquery-jvectormap-world-mill-en.js"></script>
+    <script src="js/xcharts.min.js"></script>
+    <script src="js/jquery.autosize.min.js"></script>
+    <script src="js/jquery.placeholder.min.js"></script>
+    <script src="js/gdp-data.js"></script>
+    <script src="js/morris.min.js"></script>
+    <script src="js/sparklines.js"></script>
+    <script src="js/charts.js"></script>
+    <script src="js/jquery.slimscroll.min.js"></script>
+</body>
+
+</html>

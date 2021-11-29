@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo.jpg">
+
+    <title>Fee Record - GKB International School</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- bootstrap theme -->
+    <link href="css/bootstrap-theme.css" rel="stylesheet">
+    <!--external css-->
+    <!-- font icon -->
+    <link href="css/elegant-icons-style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- full calendar css-->
+    <link href="assets/fullcalendar/fullcalendar/bootstrap-fullcalendar.css" rel="stylesheet" />
+    <link href="assets/fullcalendar/fullcalendar/fullcalendar.css" rel="stylesheet" />
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="css/fullcalendar.css">
+    <link href="css/widgets.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-responsive.css" rel="stylesheet" />
+    <link href="css/jquery-ui-1.10.4.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- container section start -->
+    <section id="container" class="main-content">
+        <header class="header dark-bg">
+            <div class="toggle-nav">
+                <div class="icon-reorder tooltips" data-original-title="Toggle Navigation" data-placement="bottom"><i
+                        class="icon_menu"></i></div>
+            </div>
+
+            <!--logo start-->
+            <a href="index.html" class="logo">GKB <span class="lite">International School</span></a>
+            <!--logo end-->
+
+            <div class="nav search-row" id="top_menu">
+                <!--  search form start -->
+                <ul class="nav top-menu">
+                    <li>
+                        <form class="navbar-form">
+                            <input class="form-control" placeholder="Search" type="text">
+                        </form>
+                    </li>
+                </ul>
+                <!--  search form end -->
+            </div>
+
+            <div class="top-nav notification-row">
+                <!-- notificatoin dropdown start-->
+                <ul class="nav pull-right top-menu">
+
+                    <!-- task notificatoin start -->
+
+                    <li class="dropdown">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <span class="profile-ava">
+                                <i class="fa fa-user"></i>
+                            </span>
+                            <span class="username">Admin</span>
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu extended logout">
+                            <div class="log-arrow-up"></div>
+                            <li class="eborder-top">
+                                <a href="index.html"><i class="icon_house_alt"></i>Dashboard</a>
+                            </li>
+                            <li>
+                                <a href="profile.html"><i class="icon_profile"></i> My Profile</a>
+                            </li>
+                            <li>
+                                <a href="admission-students.html"><i class="fas fa-user-plus"></i>Admission</a>
+                            </li>
+                            <li>
+                                <a href="fee_record.html"><i class="icon_creditcard"></i>Fee Records</a>
+                            </li>
+                            <li>
+                                <a href="examination.html"><i class="icon_archive_alt"></i>Examination Records</a>
+                            </li>
+                            <li>
+                                <a href="admin_login.html"><i class="icon_key_alt"></i> Log Out</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- user login dropdown end -->
+                </ul>
+                <!-- notificatoin dropdown end-->
+            </div>
+        </header>
+        <!--header end-->
+
+        <!--sidebar start-->
+        <aside>
+            <div id="sidebar" class="nav-collapse ">
+                <!-- sidebar menu start-->
+                <ul class="sidebar-menu">
+                    <li class="active">
+                        <a class="" href="index.html">
+                            <i class="icon_house_alt"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="admission-students.html" class="">
+                            <i class="fas fa-user-plus"></i>
+                            <span>Admission</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="" href="student_profile.html">
+                            <i class="icon_document_alt"></i>
+                            <span>Student Profile</span>
+                        </a>
+                    </li>
+                    <li class="sub-menu">
+                        <a href="javascript:;" class="">
+                            <i class="far fa-credit-card"></i>
+                            <span>Fee Records</span>
+                            <span class="menu-arrow arrow_carrot-right"></span>
+                        </a>
+                        <ul class="sub">
+                            <li><a class="" href="fee_record.html">Add / View Expenses</a></li>
+                            <li><a class="" href="edit_fees.html">Check Expenses</a></li>
+                            <li><a class="" href="all_expense.html">Expense Collection</a></li>
+                        </ul>
+                    </li>
+                    <li class="sub-menu">
+                        <a href="examination.html" class="">
+                            <i class="icon_contacts_alt"></i>
+                            <span>Examination Records</span>
+                        </a>
+                    </li>
+                    <li class="sub-menu">
+                        <a href="javascript:;" class="">
+                            <i class="far fa-credit-card"></i>
+                            <span>Master</span>
+                            <span class="menu-arrow arrow_carrot-right"></span>
+                        </a>
+                        <ul class="sub">
+                            <li><a class="" href="add_class_session.html">Add New Class/Session</a></li>
+                            <li style="color:orangered;"><a class="" href="admin_login.html">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- sidebar menu end-->
+            </div>
+        </aside>
+        <!--sidebar end-->
+
+        <!--main content start-->
+        <section id="main-content">
+            <section class="wrapper">
+                <!--overview start-->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h3 class="page-header"><i class="far fa-plus-square b-icon"></i>Add / View Expenses</h3>
+                        <ol class="breadcrumb">
+                            <li><i class="fa fa-home"></i><a href="index.html">Home</a></li>
+                            <li><i class="far fa-credit-card b-icon"></i>Fee Records</li>
+                            <li><i class="far fa-plus-square b-icon"></i>Add / View Expenses</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="panel">
+                            <div class="panel-body">
+                                <div class="panel-heading heading-layout1">
+                                    <strong><span style="color:orange;">GKB</span><span class="lite">
+                                            International School</span> : Fee Records</strong>
+                                </div>
+
+                                <!-- categories -->
+                                <header class="panel-heading tab-bg-info mg-top-30">
+                                    <ul class="nav nav-tabs">
+                                        <li class="active">
+                                            <a data-toggle="tab" href="#add-fee">
+                                                <i class="icon-user"></i>
+                                                Add Fee
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </header>
+
+                                <!-- Add-Fee -->
+                                <div class="tab-content">
+                                    <div id="add-fee" class="tab-pane tab-pane active">
+                                        <section class="panel">
+                                            <div class="panel-body">
+                                                <form class="add-fee-body" action="#" method="post">
+                                                    <div class="form-group" id="fee-detail-names">
+                                                        <label class="col-sm-4 control-label"><strong>Registration
+                                                                ID<sup style="color:red">*</sup></strong> : </label>
+                                                        <label class="col-sm-4 control-label"><strong>Student's Name<sup
+                                                                    style="color:red">*</sup></strong> : </label>
+                                                        <label class="col-sm-4 control-label"><strong>Class<sup
+                                                                    style="color:red">*</sup></strong> : </label>
+                                                    </div>
+                                                    <div class="form-group">
+
+                                                        <div class="col-sm-4">
+                                                            <input type="number" maxlength="4" class="form-control"
+                                                                placeholder="Enter Student Reg-ID" name="reg-id"
+                                                                required>
+                                                        </div>
+                                                        <div class="col-sm-4">
+                                                            <input type="text" class="form-control"
+                                                                placeholder="Enter Student's Name" required>
+                                                        </div>
+                                                        <div class="col-sm-4">
+                                                            <select id="inputClass" class="search-input form-control"
+                                                                required>
+                                                                <option value="">-Class Select-</option>
+                                                                <option value="1">Nursery</option>
+                                                                <option value="2">K.G 1</option>
+                                                                <option value="3">K.G 2</option>
+                                                                <option value="4">I</option>
+                                                                <option value="5">II</option>
+                                                                <option value="6">III</option>
+                                                                <option value="7">IV</option>
+                                                                <option value="8">V</option>
+                                                                <option value="9">VI</option>
+                                                                <option value="10">VII</option>
+                                                                <option value="11">VIII</option>
+                                                                <option value="12">IX</option>
+                                                                <option value="13">X</option>
+                                                                <option value="14">XI</option>
+                                                                <option value="15">XII</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group" id="fee-expense-names">
+                                                        <label class="col-sm-3 control-label"><strong>Expense Type<sup
+                                                                    style="color:red">*</sup></strong> : </label>
+                                                        <label class="col-sm-3 control-label"><strong>Amount (in
+                                                                &#8377;)<sup style="color:red">*</sup></strong> :
+                                                        </label>
+                                                        <label class="col-sm-3 control-label"><strong>Status<sup
+                                                                    style="color:red">*</sup></strong> : </label>
+                                                        <label class="col-sm-3 control-label"><strong>Due Date<sup
+                                                                    style="color:red">*</sup></strong> : </label>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="col-sm-3">
+                                                            <select name="expense-type" class="form-control" required>
+                                                                <option value="">-Select Expense-</option>
+                                                                <option value="1">Transport</option>
+                                                                <option value="2">Maintenance</option>
+                                                                <option value="3">Tuition</option>
+                                                                <option value="4">Facility</option>
+                                                                <option value="5">Library</option>
+                                                                <option value="6">All</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-sm-3">
+                                                            <input type="number" name="fee-amount" class="form-control"
+                                                                placeholder="Amount (&#8377;)" required>
+                                                        </div>
+                                                        <div class="col-sm-3">
+                                                            <select name="expense-status" class="form-control" required>
+                                                                <option value="">-Pay Status-</option>
+                                                                <option value="1">Due</option>
+                                                                <option value="2">Paid</option>
+                                                                <option value="3">Pending</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-sm-3">
+                                                            <input type="date" name="fee-date" class="form-control"
+                                                                placeholder="dd/mm/yyyy" required>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group clearfix">
+                                                        <button type="submit" class="signupbtn btn-success">Add
+                                                            Fee</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </div>
+
+                                <!-- Pending Fees -->
+                                <header class="panel-heading tab-bg-info">
+                                    <ul class="nav nav-tabs">
+                                        <li class="active">
+                                            <a data-toggle="tab" href="#pending-fee">
+                                                <i class="icon-user"></i>
+                                                View Expenses
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </header>
+                                <div class="tab-content">
+                                    <div id="pending-fee" class="tab-pane tab-pane active">
+                                        <section class="panel">
+                                            <div class="row mg-top-30">
+                                                <div class="col-lg-12 col-md-12">
+                                                    <div class="col-md-2 col-sm-3">
+                                                        <input type="search" class="search-input form-control"
+                                                            id="inputRegId" placeholder="Search by Registration Id">
+                                                    </div>
+                                                    <div class="col-md-2 col-sm-2">
+                                                        <select id="inputClass" class="search-input form-control"
+                                                            required>
+                                                            <option value="">-Class Search-</option>
+                                                            <option value="1">Nursery</option>
+                                                            <option value="2">K.G 1</option>
+                                                            <option value="3">K.G 2</option>
+                                                            <option value="4">I</option>
+                                                            <option value="5">II</option>
+                                                            <option value="6">III</option>
+                                                            <option value="7">IV</option>
+                                                            <option value="8">V</option>
+                                                            <option value="9">VI</option>
+                                                            <option value="10">VII</option>
+                                                            <option value="11">VIII</option>
+                                                            <option value="12">IX</option>
+                                                            <option value="13">X</option>
+                                                            <option value="14">XI</option>
+                                                            <option value="15">XII</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-sm-2">
+                                                        <select id="inputExpense" name="expense-type"
+                                                            class="search-input form-control" required>
+                                                            <option value="">-Select Expense-</option>
+                                                            <option value="1">Transport</option>
+                                                            <option value="2">Maintenance</option>
+                                                            <option value="3">Tuition</option>
+                                                            <option value="4">Facility</option>
+                                                            <option value="5">Library</option>
+                                                            <option value="6">All</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-md-1 col-sm-2"><button id="studentSearch"
+                                                            class="btn btn-danger">Search</button>
+                                                    </div>
+                                                    <div class="col-md-1 col-sm-2 "><button id="buttonReset"
+                                                            onclick="performReset3()"
+                                                            class="btn btn-primary">Reset</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="panel-body total-fee-table">
+                                                <table id="pending-fee-table" class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="sorting" tabindex="0" rowspan="1" colspan="1"
+                                                                style="width: 95px;">Registration ID</th>
+                                                            <th class="sorting" tabindex="0" rowspan="1" colspan="1"
+                                                                style="width: 95px;">Name</th>
+                                                            <th class="sorting" tabindex="0" rowspan="1" colspan="1"
+                                                                style="width: 50px;">Gender</th>
+                                                            <th class="sorting" tabindex="0" rowspan="1" colspan="1"
+                                                                style="width: 50px;">Class</th>
+                                                            <th class="sorting" tabindex="0" rowspan="1" colspan="1"
+                                                                style="width: 40px;">Expense Type</th>
+                                                            <th class="sorting" tabindex="0" rowspan="1" colspan="1"
+                                                                style="width: 50px;">Expense Month</th>
+                                                            <th class="sorting" tabindex="0" rowspan="1" colspan="1"
+                                                                style="width: 50px;">Expense Year</th>
+                                                            <th class="sorting" tabindex="0" rowspan="1" colspan="1"
+                                                                style="width: 80px;">Amount</th>
+                                                            <th class="sorting" tabindex="0" rowspan="1" colspan="1"
+                                                                style="width: 120px;">Status</th>
+                                                            <th class="sorting" tabindex="0" rowspan="1" colspan="1"
+                                                                style="width: 50px;">Due Date</th>
+                                                            <th class="sorting" tabindex="0" rowspan="1" colspan="1"
+                                                                style="width: 100px;">Email</th>
+                                                            <th class="sorting" tabindex="0" rowspan="1" colspan="1"
+                                                                style="width: 50px;">Phone</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody class="expense-body">
+                                                        <tr class="item">
+                                                            <td>GKB-1902-2020</td>
+                                                            <td>John Doe</td>
+                                                            <td>Male</td>
+                                                            <td>VI</td>
+                                                            <td>Transport</td>
+                                                            <td>May</td>
+                                                            <td>2019</td>
+                                                            <td>&#8377;<span>5200</span></td>
+                                                            <td class="badge d-block badge-danger">Due</td>
+                                                            <td class="due-date">24-05-19</td>
+                                                            <td>johndoe@gmail.com</td>
+                                                            <td>70021-98XXX</td>
+                                                        </tr>
+                                                        <tr class="item">
+                                                            <td>GKB-1902-2020</td>
+                                                            <td>Marcus Lee</td>
+                                                            <td>Male</td>
+                                                            <td>VIII</td>
+                                                            <td>Transport</td>
+                                                            <td>May</td>
+                                                            <td>2019</td>
+                                                            <td>&#8377;<span>5200</span></td>
+                                                            <td class="badge d-block badge-pending">Pending</td>
+                                                            <td class="due-date">24-05-19</td>
+                                                            <td>johndoe@gmail.com</td>
+                                                            <td>70021-98XXX</td>
+                                                        </tr>
+                                                        <tr class="item">
+                                                            <td>GKB-1902-2020</td>
+                                                            <td>Stephanie Hedger</td>
+                                                            <td>Female</td>
+                                                            <td>VII</td>
+                                                            <td>Transport</td>
+                                                            <td>May</td>
+                                                            <td>2019</td>
+                                                            <td>&#8377;<span>5200</span></td>
+                                                            <td class="badge d-block badge-paid">Paid</td>
+                                                            <td class="due-date">24-05-19</td>
+                                                            <td>johndoe@gmail.com</td>
+                                                            <td>70021-98XXX</td>
+                                                        </tr>
+                                                        <tr class="item">
+                                                            <td>GKB-1902-2020</td>
+                                                            <td>Lorraine Martyn</td>
+                                                            <td>Male</td>
+                                                            <td>X</td>
+                                                            <td>Transport</td>
+                                                            <td>May</td>
+                                                            <td>2019</td>
+                                                            <td>&#8377;<span>5200</span></td>
+                                                            <td class="badge d-block badge-danger">Due</td>
+                                                            <td class="due-date">24-05-19</td>
+                                                            <td>johndoe@gmail.com</td>
+                                                            <td>70021-98XXX</td>
+                                                        </tr>
+                                                        <tr class="item">
+                                                            <td>GKB-1902-2020</td>
+                                                            <td>Marcus Lee</td>
+                                                            <td>Male</td>
+                                                            <td>V</td>
+                                                            <td>Transport</td>
+                                                            <td>May</td>
+                                                            <td>2019</td>
+                                                            <td>&#8377;<span>5200</span></td>
+                                                            <td class="badge d-block badge-pending">Pending</td>
+                                                            <td class="due-date">22-05-19</td>
+                                                            <td>johndoe@gmail.com</td>
+                                                            <td>70021-98XXX</td>
+                                                        </tr>
+                                                        <tr class="item">
+                                                            <td>GKB-1902-2020</td>
+                                                            <td>John Doe</td>
+                                                            <td>Male</td>
+                                                            <td>IX</td>
+                                                            <td>Transport</td>
+                                                            <td>May</td>
+                                                            <td>2019</td>
+                                                            <td>&#8377;<span>5200</span></td>
+                                                            <td class="badge d-block badge-danger">Due</td>
+                                                            <td class="due-date">4-05-19</td>
+                                                            <td>johndoe@gmail.com</td>
+                                                            <td>70021-98XXX</td>
+                                                        </tr>
+                                                        <tr class="item">
+                                                            <td>GKB-1902-2020</td>
+                                                            <td>Stephanie Hedger</td>
+                                                            <td>Female</td>
+                                                            <td>VII</td>
+                                                            <td>Transport</td>
+                                                            <td>May</td>
+                                                            <td>2019</td>
+                                                            <td>&#8377;<span>5200</span></td>
+                                                            <td class="badge d-block badge-paid">Paid</td>
+                                                            <td class="due-date">18-05-19</td>
+                                                            <td>johndoe@gmail.com</td>
+                                                            <td>70021-98XXX</td>
+                                                        </tr>
+                                                        <tr class="item">
+                                                            <td>GKB-1902-2020</td>
+                                                            <td>Marcus Lee</td>
+                                                            <td>Male</td>
+                                                            <td>VI</td>
+                                                            <td>Transport</td>
+                                                            <td>May</td>
+                                                            <td>2019</td>
+                                                            <td>&#8377;<span>5200</span></td>
+                                                            <td class="badge d-block badge-danger">Due</td>
+                                                            <td class="due-date">18-05-19</td>
+                                                            <td>johndoe@gmail.com</td>
+                                                            <td>70021-98XXX</td>
+                                                        </tr>
+
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </section>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </section>
+
+    <!-- javascripts -->
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui-1.10.4.min.js"></script>
+    
+    <!-- bootstrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- nice scroll -->
+    <script src="js/jquery.scrollTo.min.js"></script>
+    <script src="js/jquery.nicescroll.js" type="text/javascript"></script>
+
+    <!--script for this page only-->
+    <script src="js/calendar-custom.js"></script>
+    <script src="js/jquery.rateit.min.js"></script>
+    <!-- custom select -->
+    <!--custome script for all page-->
+    <script src="js/filter.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/scripts.js"></script>
+    <!-- custom script for this page-->
+    <script src="js/jquery.autosize.min.js"></script>
+    <script src="js/jquery.placeholder.min.js"></script>
+
+</html>
